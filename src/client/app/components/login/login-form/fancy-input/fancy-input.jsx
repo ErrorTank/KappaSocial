@@ -14,7 +14,7 @@ export class FancyInput extends React.Component{
     };
     render(){
         let {isFocus}=this.state;
-        let {type,fakeHolder,onChange}=this.props;
+        let {type,fakeHolder,onChange,value}=this.props;
         return(
             <div>
                 <div className="form-group">
@@ -24,6 +24,7 @@ export class FancyInput extends React.Component{
                            id={type}
                            onFocus={()=>this.toggleFocus()}
                            onBlur={()=>this.toggleFocus()}
+                           value={value}
                            onChange={(e)=>onChange(e.target.value)}
                     />
                 </div>

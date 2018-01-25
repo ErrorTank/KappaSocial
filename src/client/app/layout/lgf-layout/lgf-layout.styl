@@ -27,4 +27,22 @@
       text-align center
     }
   }
+  .form-fade-enter {
+    opacity: 0;
+  }
+
+  .form-fade-enter.form-fade-enter-active {
+    opacity: 1;
+    transition: opacity .3ms ease-in;
+  }
+
+  .form-fade-exit {
+    opacity: 1;
+  }
+
+  .form-fade-exit.form-fade-exit-active {
+    opacity: 0;
+    transition: opacity .3ms ease-in;
+  }
 }
+

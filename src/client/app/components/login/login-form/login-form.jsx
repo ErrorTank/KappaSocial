@@ -1,25 +1,26 @@
 import React from "react";
 import {FancyInput} from "./fancy-input/fancy-input";
 
+
 export class LoginForm extends React.Component{
     constructor(props){
         super(props);
         this.state={
-            name:"",
+            email:"",
             pass:""
         };
     };
     render(){
-        let {name,pass}=this.state;
+        let {email,pass}=this.state;
         let {switchForm}=this.props;
         return(
             <div className="login-form">
                 <form>
                     <FancyInput
-                        type="username"
-                        fakeHolder="Username"
-                        value={name}
-                        onChange={(val)=>this.setState({name:val})}
+                        type="email"
+                        fakeHolder="Email"
+                        value={email}
+                        onChange={(val)=>this.setState({email:val})}
                     />
                     <FancyInput
                         type="password"
@@ -36,7 +37,7 @@ export class LoginForm extends React.Component{
                 <div className="toggle-signup">
                     <p className="t-sub">Don't have an account</p>
                     <p className="switch-signup"
-
+                       onClick={()=>switchForm()}
                     >
                         Sign up
                     </p>
