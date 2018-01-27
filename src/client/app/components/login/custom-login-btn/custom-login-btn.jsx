@@ -7,12 +7,14 @@ export class CustomLoginBtn extends React.Component{
         };
     };
     render(){
-        let {type}=this.props;
+        let {type,onClick,title}=this.props;
         return(
-            <div className="custom-btn">
+            <div className="custom-btn"
+                 onClick={()=>onClick()}
+            >
                 <button className={`${type} btn btn-block`}>
                     <i className="fa fa-facebook-official" aria-hidden="true"/>
-                    <span className="btn-title">Login with Facebook</span>
+                    <span className="btn-title">{title}</span>
                 </button>
             </div>
         );

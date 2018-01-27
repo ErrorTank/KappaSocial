@@ -1,14 +1,19 @@
 const express=require("express");
 const path=require("path");
 const bodyParser=require("body-parser");
-const jwtAuth=require("./authorization/jwt-auth");
+const keys=require("./keys/keys");
 const app=express();
-const validRoutes=["/login"];
+const validRoutes=["/login","/home"];
 const mysql=require("mysql");
 
 app.use(express.static("./public"));
 app.use(bodyParser.json());
-app.use("/api/db",jwtAuth.authorPlayer);
+app.use("/api/db",(req,res,next)=>{ //ask for private
+    if(req.query.key===keys.serverKey){
+        next();
+    }
+    res.sendStatus(404);
+});
 const port = 2000;
 
 const db= mysql.createConnection({
@@ -35,4 +40,6 @@ const server=app.listen(port,()=>{
 });
 
 require("./sockets/socket")(server,app);
+require("./controllers/db-ultils")(app,db);
+require("./controllers/user-ultils")(app,db);
 

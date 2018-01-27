@@ -1,10 +1,12 @@
 import React from "react";
+import {ValidateIcon} from "../../../validate-icon/validate-icon";
 
 export class FancyInput extends React.Component{
     constructor(props){
         super(props);
         this.state={
-            isFocus:false
+            isFocus:false,
+            showIcon:false
         };
     };
     toggleFocus=()=>{
@@ -13,21 +15,25 @@ export class FancyInput extends React.Component{
         this.setState({isFocus:value ? true : !isFocus},()=>console.log(this.state.isFocus));
     };
     render(){
-        let {isFocus}=this.state;
-        let {type,fakeHolder,onChange,value}=this.props;
+        let {isFocus,showIcon}=this.state;
+        let {type,fakeHolder,onChange,value,suggest,valid}=this.props;
         return(
-            <div>
-                <div className="form-group">
+            <div className={`fg-wrapper ${showIcon ? valid ? "valid" :"in-valid" : ""}`}>
+                <div className={`form-group fi-wrapper`}>
                     <p className={`${isFocus ? "on-focus" : ""} fake-holder`}>{fakeHolder}</p>
-                    <input type="text"
+                    <input type={type}
                            className={`form-control ${isFocus ? "i-focus" :""}`}
-                           id={type}
                            onFocus={()=>this.toggleFocus()}
                            onBlur={()=>this.toggleFocus()}
                            value={value}
-                           onChange={(e)=>onChange(e.target.value)}
+                           onChange={(e)=>{
+                               onChange(e.target.value);
+                               this.setState({showIcon:true});
+                           }}
                     />
+                    {showIcon && <ValidateIcon valid={valid}/>}
                 </div>
+                <p className="validate-msg">{(!showIcon || !valid) && suggest}</p>
             </div>
         );
     }

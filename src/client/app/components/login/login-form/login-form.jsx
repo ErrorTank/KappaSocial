@@ -1,6 +1,6 @@
 import React from "react";
-import {FancyInput} from "./fancy-input/fancy-input";
-
+import {LoginInput} from "./login-input/login-input";
+import {Switch} from "../switch/switch";
 
 export class LoginForm extends React.Component{
     constructor(props){
@@ -16,13 +16,13 @@ export class LoginForm extends React.Component{
         return(
             <div className="login-form">
                 <form>
-                    <FancyInput
+                    <LoginInput
                         type="email"
                         fakeHolder="Email"
                         value={email}
                         onChange={(val)=>this.setState({email:val})}
                     />
-                    <FancyInput
+                    <LoginInput
                         type="password"
                         fakeHolder="Password"
                         value={pass}
@@ -34,14 +34,11 @@ export class LoginForm extends React.Component{
                         </button>
                     </div>
                 </form>
-                <div className="toggle-signup">
-                    <p className="t-sub">Don't have an account</p>
-                    <p className="switch-signup"
-                       onClick={()=>switchForm()}
-                    >
-                        Sign up
-                    </p>
-                </div>
+                <Switch
+                    switchForm={()=>switchForm()}
+                    quote="Don't have an account"
+                    type="Sign up"
+                />
             </div>
         );
     }
