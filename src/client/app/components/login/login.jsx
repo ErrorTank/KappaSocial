@@ -6,6 +6,7 @@ export class Login extends React.Component{
         super(props);
         this.state={
         };
+        document.title="Kappa"
     };
     render(){
         return(

@@ -10,9 +10,9 @@ app.use(express.static("./public"));
 app.use(bodyParser.json());
 app.use("/api/db",(req,res,next)=>{ //ask for private
     if(req.query.key===keys.serverKey){
+        console.log("match");
         next();
     }
-    res.sendStatus(404);
 });
 const port = 2000;
 

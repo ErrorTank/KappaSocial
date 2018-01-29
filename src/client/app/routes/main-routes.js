@@ -1,7 +1,7 @@
 import React from "react";
 import {Router, Route, Redirect,Switch} from "react-router-dom";
 import createBrowserHistory from 'history/createBrowserHistory';
-import {LoginLayout} from "../layout/login-layout/login-layout";
+import {Login} from "../components/login/login";
 import {HomeLayout} from "../layout/home-layout/home-layout";
 
 export const customHistory = createBrowserHistory();
@@ -12,9 +12,9 @@ export class MainRoutes extends React.Component{
         return(
             <Router history={customHistory}>
                 <Switch>
-                    <Route path="/login" component={LoginLayout} exact/>
+                    <Route path="/login" component={Login} exact/>
                     <Route path="/home" component={HomeLayout} exact/>
-                    <Route component={LoginLayout}/>
+                    <Route component={Login}/>
                 </Switch>
             </Router>
         );

@@ -2,6 +2,9 @@ import React from "react";
 import {FancyInput} from "./fancy-input/fancy-input";
 import {Switch} from "../switch/switch";
 import {formValidator} from "../../../../services/validate-form";
+import {userServices} from "../../../../services/user-info";
+import {customHistory} from "../../../routes/main-routes";
+import {Warning} from "../../warning/warning";
 
 export class SignUpForm extends React.Component{
     constructor(props){
@@ -13,13 +16,31 @@ export class SignUpForm extends React.Component{
             rePass:""
         };
     };
+    registerUser=()=> {
+        let {name,email,pass}=this.state;
+        let user = {name,email,pass};
+        userServices.regularLogin(user).then(()=>{
+            customHistory.push("/home");
+        }).catch((err)=>{
+           this.msgBox.show();
+        });
+    };
     render(){
         let {name,email,pass,rePass}=this.state;
         let {switchForm}=this.props;
         let {isPassword,isEmail,isName}=formValidator;
+        let validCount=[isEmail(email),isName(name),isPassword(pass),pass===rePass].filter(element=>!!element);
         return(
             <div className="signup-form">
-                <form>
+                <Warning
+                    ref={warning=>this.msgBox=warning}
+                    msg="This email has already existed. Try again!"
+                />
+                <form onSubmit={(e)=>{
+                    e.preventDefault();
+                    this.registerUser();
+                }}
+                >
                     <FancyInput
                         type="email"
                         fakeHolder="Email"
@@ -53,7 +74,10 @@ export class SignUpForm extends React.Component{
                         valid={rePass===pass}
                     />
                     <div className="submit-btn-wrap">
-                        <button type="submit" className="btn btn-block btn-success submit-btn">
+                        <button type="submit"
+                                className="btn btn-block btn-success submit-btn"
+                                disabled={validCount.length!==4}
+                        >
                             Sign up
                         </button>
                     </div>

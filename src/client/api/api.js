@@ -8,8 +8,8 @@ let request = (url, type, data) => new Promise((resolve, reject) => {
         success: (data) => {
             resolve(data);
         },
-        error:  () => {
-            reject();
+        error:  (err) => {
+            reject(err);
         }
     };
 

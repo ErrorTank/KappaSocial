@@ -7,7 +7,20 @@ let userInfo=()=>{
 
 let userServices={
     getInfo:()=>userInfo(),
-    login:(user)=>{
+    loginByFB:(user)=>{
+        return new Promise((res,rej)=>{
+            return userApis.saveFBUser(user).then(({token})=>{
+                console.log(token);
+                localStorage.setItem("userInfo",JSON.stringify(user));
+                localStorage.setItem("userToken",token);
+                res();
+            }).catch((err)=>{
+                console.log(err);
+                rej();
+            })
+        });
+    },
+    regularLogin:(user)=>{
         return new Promise((res,rej)=>{
             return userApis.saveUser(user).then(({token})=>{
                 console.log(token);
@@ -15,7 +28,6 @@ let userServices={
                 localStorage.setItem("userToken",token);
                 res();
             }).catch((err)=>{
-                console.log(err);
                 rej();
             })
         });

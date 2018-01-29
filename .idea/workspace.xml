@@ -5,33 +5,26 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="4d06d219-9297-4e46-b988-13fee6355a8b" name="Default" comment="">
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/client/api/ultils-apis/user-apis.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/client/app/components/login/login-form/login-input/login-input.jsx" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/client/app/components/login/login-form/login-input/login-input.styl" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/client/app/components/login/sign-up-form/fancy-input/fancy-input.jsx" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/client/app/components/login/sign-up-form/fancy-input/fancy-input.styl" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/client/app/components/login/switch/switch.jsx" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/client/app/components/login/switch/switch.styl" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/client/app/components/validate-icon/validate-icon.jsx" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/client/app/components/validate-icon/validate-icon.styl" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/client/app/layout/home-layout/home-layout.jsx" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/client/services/user-info.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/client/services/validate-form.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/server/controllers/db-ultils.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/server/controllers/user-ultils.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/client/app/components/animation/fade.jsx" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/client/app/components/animation/slide.jsx" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/client/app/components/warning/warning.jsx" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/client/app/components/warning/warning.styl" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change beforePath="$PROJECT_DIR$/public/bundle.js" afterPath="$PROJECT_DIR$/public/bundle.js" />
       <change beforePath="$PROJECT_DIR$/src/client/api/api.js" afterPath="$PROJECT_DIR$/src/client/api/api.js" />
-      <change beforePath="$PROJECT_DIR$/src/client/app/components/login/custom-login-btn/custom-login-btn.jsx" afterPath="$PROJECT_DIR$/src/client/app/components/login/custom-login-btn/custom-login-btn.jsx" />
-      <change beforePath="$PROJECT_DIR$/src/client/app/components/login/login-form/fancy-input/fancy-input.jsx" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/client/app/components/login/login-form/login-form.jsx" afterPath="$PROJECT_DIR$/src/client/app/components/login/login-form/login-form.jsx" />
+      <change beforePath="$PROJECT_DIR$/src/client/api/ultils-apis/user-apis.js" afterPath="$PROJECT_DIR$/src/client/api/ultils-apis/user-apis.js" />
       <change beforePath="$PROJECT_DIR$/src/client/app/components/login/login-form/login-form.styl" afterPath="$PROJECT_DIR$/src/client/app/components/login/login-form/login-form.styl" />
+      <change beforePath="$PROJECT_DIR$/src/client/app/components/login/login.jsx" afterPath="$PROJECT_DIR$/src/client/app/components/login/login.jsx" />
       <change beforePath="$PROJECT_DIR$/src/client/app/components/login/sign-up-form/sign-up-form.jsx" afterPath="$PROJECT_DIR$/src/client/app/components/login/sign-up-form/sign-up-form.jsx" />
+      <change beforePath="$PROJECT_DIR$/src/client/app/components/login/sign-up-form/sign-up-form.styl" afterPath="$PROJECT_DIR$/src/client/app/components/login/sign-up-form/sign-up-form.styl" />
       <change beforePath="$PROJECT_DIR$/src/client/app/layout/lgf-layout/lgf-layout.jsx" afterPath="$PROJECT_DIR$/src/client/app/layout/lgf-layout/lgf-layout.jsx" />
       <change beforePath="$PROJECT_DIR$/src/client/app/layout/lgf-layout/lgf-layout.styl" afterPath="$PROJECT_DIR$/src/client/app/layout/lgf-layout/lgf-layout.styl" />
+      <change beforePath="$PROJECT_DIR$/src/client/app/layout/login-layout/login-layout.jsx" afterPath="" />
       <change beforePath="$PROJECT_DIR$/src/client/app/routes/main-routes.js" afterPath="$PROJECT_DIR$/src/client/app/routes/main-routes.js" />
+      <change beforePath="$PROJECT_DIR$/src/client/services/user-info.js" afterPath="$PROJECT_DIR$/src/client/services/user-info.js" />
       <change beforePath="$PROJECT_DIR$/src/client/styl/styles.styl" afterPath="$PROJECT_DIR$/src/client/styl/styles.styl" />
-      <change beforePath="$PROJECT_DIR$/src/server/keys/keys.js" afterPath="$PROJECT_DIR$/src/server/keys/keys.js" />
+      <change beforePath="$PROJECT_DIR$/src/server/controllers/db-ultils.js" afterPath="$PROJECT_DIR$/src/server/controllers/db-ultils.js" />
+      <change beforePath="$PROJECT_DIR$/src/server/controllers/user-ultils.js" afterPath="$PROJECT_DIR$/src/server/controllers/user-ultils.js" />
       <change beforePath="$PROJECT_DIR$/src/server/server.js" afterPath="$PROJECT_DIR$/src/server/server.js" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
@@ -49,8 +42,8 @@
       <file leaf-file-name="login-form.jsx" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/client/app/components/login/login-form/login-form.jsx">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="286">
-              <caret line="19" column="36" lean-forward="false" selection-start-line="19" selection-start-column="36" selection-end-line="19" selection-end-column="36" />
+            <state relative-caret-position="176">
+              <caret line="8" column="21" lean-forward="false" selection-start-line="8" selection-start-column="21" selection-end-line="8" selection-end-column="21" />
               <folding>
                 <element signature="e#0#26#0" expanded="true" />
               </folding>
@@ -61,8 +54,8 @@
       <file leaf-file-name="lgf-layout.jsx" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/client/app/layout/lgf-layout/lgf-layout.jsx">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="195">
-              <caret line="18" column="70" lean-forward="false" selection-start-line="18" selection-start-column="70" selection-end-line="18" selection-end-column="70" />
+            <state relative-caret-position="393">
+              <caret line="56" column="46" lean-forward="false" selection-start-line="56" selection-start-column="46" selection-end-line="56" selection-end-column="46" />
               <folding>
                 <element signature="e#0#26#0" expanded="true" />
               </folding>
@@ -70,51 +63,67 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="home-layout.jsx" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/client/app/layout/home-layout/home-layout.jsx">
+      <file leaf-file-name="lgf-layout.styl" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/client/app/layout/lgf-layout/lgf-layout.styl">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="242">
-              <caret line="11" column="28" lean-forward="false" selection-start-line="11" selection-start-column="28" selection-end-line="11" selection-end-column="28" />
+            <state relative-caret-position="535">
+              <caret line="60" column="33" lean-forward="false" selection-start-line="60" selection-start-column="33" selection-end-line="60" selection-end-column="33" />
+              <folding>
+                <marker date="1517209381796" expanded="true" signature="11:1114" ph="{...}" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="sign-up-form.jsx" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/client/app/components/login/sign-up-form/sign-up-form.jsx">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="330">
+              <caret line="36" column="68" lean-forward="false" selection-start-line="36" selection-start-column="68" selection-end-line="36" selection-end-column="68" />
+              <folding>
+                <element signature="e#0#26#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="sign-up-form.styl" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/client/app/components/login/sign-up-form/sign-up-form.styl">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-37">
+              <caret line="0" column="13" lean-forward="false" selection-start-line="0" selection-start-column="13" selection-end-line="0" selection-end-column="13" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="server.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/server/server.js">
+      <file leaf-file-name="warning.jsx" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/client/app/components/warning/warning.jsx">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="682">
-              <caret line="43" column="29" lean-forward="false" selection-start-line="43" selection-start-column="29" selection-end-line="43" selection-end-column="29" />
+            <state relative-caret-position="550">
+              <caret line="25" column="26" lean-forward="true" selection-start-line="25" selection-start-column="26" selection-end-line="25" selection-end-column="26" />
+              <folding>
+                <element signature="e#0#26#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="warning.styl" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/client/app/components/warning/warning.styl">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="601">
+              <caret line="32" column="23" lean-forward="false" selection-start-line="32" selection-start-column="23" selection-end-line="32" selection-end-column="23" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="user-ultils.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/server/controllers/user-ultils.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="132">
-              <caret line="6" column="47" lean-forward="false" selection-start-line="6" selection-start-column="47" selection-end-line="6" selection-end-column="47" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="db-ultils.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/server/controllers/db-ultils.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="132">
-              <caret line="6" column="11" lean-forward="false" selection-start-line="6" selection-start-column="11" selection-end-line="6" selection-end-column="11" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="main-routes.js" pinned="false" current-in-tab="true">
+      <file leaf-file-name="main-routes.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/client/app/routes/main-routes.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="198">
-              <caret line="9" column="48" lean-forward="true" selection-start-line="9" selection-start-column="48" selection-end-line="9" selection-end-column="48" />
+            <state relative-caret-position="264">
+              <caret line="12" column="44" lean-forward="false" selection-start-line="12" selection-start-column="44" selection-end-line="12" selection-end-column="44" />
               <folding>
                 <element signature="e#0#26#0" expanded="true" />
               </folding>
@@ -122,32 +131,26 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="user-info.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/client/services/user-info.js">
+      <file leaf-file-name="fade.jsx" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/client/app/components/animation/fade.jsx">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="242">
-              <caret line="11" column="34" lean-forward="false" selection-start-line="11" selection-start-column="34" selection-end-line="11" selection-end-column="34" />
-              <folding />
+            <state relative-caret-position="88">
+              <caret line="4" column="18" lean-forward="false" selection-start-line="4" selection-start-column="18" selection-end-line="4" selection-end-column="18" />
+              <folding>
+                <element signature="e#0#26#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="user-apis.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/client/api/ultils-apis/user-apis.js">
+      <file leaf-file-name="slide.jsx" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/client/app/components/animation/slide.jsx">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="176">
-              <caret line="8" column="18" lean-forward="false" selection-start-line="8" selection-start-column="18" selection-end-line="8" selection-end-column="18" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="login-layout.jsx" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/client/app/layout/login-layout/login-layout.jsx">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="154">
-              <caret line="8" column="30" lean-forward="false" selection-start-line="8" selection-start-column="30" selection-end-line="8" selection-end-column="30" />
-              <folding />
+            <state relative-caret-position="330">
+              <caret line="15" column="15" lean-forward="false" selection-start-line="15" selection-start-column="15" selection-end-line="15" selection-end-column="15" />
+              <folding>
+                <element signature="e#0#26#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -170,24 +173,18 @@
         <option value="$PROJECT_DIR$/src/server/authorization/jwt-auth.js" />
         <option value="$PROJECT_DIR$/src/client/app/components/login/login.styl" />
         <option value="$PROJECT_DIR$/src/client/app/layout/login-form-layout.jsx" />
-        <option value="$PROJECT_DIR$/src/client/app/components/login/login.jsx" />
         <option value="$PROJECT_DIR$/src/client/styl/base/general.styl" />
         <option value="$PROJECT_DIR$/src/client/styl/base/fonts.styl" />
         <option value="$PROJECT_DIR$/src/client/app/components/login/custom-login-btn/custom-login-btn.styl" />
-        <option value="$PROJECT_DIR$/src/client/app/components/login/sign-up-form/sign-up-form.styl" />
-        <option value="$PROJECT_DIR$/src/client/app/layout/lgf-layout/lgf-layout.styl" />
         <option value="$PROJECT_DIR$/src/client/app/components/login/switch/switch.styl" />
         <option value="$PROJECT_DIR$/src/client/app/components/login/switch/switch.jsx" />
         <option value="$PROJECT_DIR$/src/client/services/validate-signup.js" />
         <option value="$PROJECT_DIR$/src/client/services/validate-form.js" />
         <option value="$PROJECT_DIR$/src/client/app/components/login/login-form/fancy-input/fancy-input.jsx" />
-        <option value="$PROJECT_DIR$/src/client/app/components/login/login-form/login-form.styl" />
         <option value="$PROJECT_DIR$/src/client/app/components/validate-icon/validate-icon.jsx" />
         <option value="$PROJECT_DIR$/src/client/app/components/validate-icon/validate-icon.styl" />
         <option value="$PROJECT_DIR$/src/client/app/components/fancy-input/fancy-input.jsx" />
         <option value="$PROJECT_DIR$/src/client/app/components/fancy-input/fancy-input.styl" />
-        <option value="$PROJECT_DIR$/src/client/app/components/login/sign-up-form/sign-up-form.jsx" />
-        <option value="$PROJECT_DIR$/src/client/styl/styles.styl" />
         <option value="$PROJECT_DIR$/src/client/app/components/login/sign-up-form/fancy-input/fancy-input.jsx" />
         <option value="$PROJECT_DIR$/src/client/app/components/login/login-form/login-form.jsx" />
         <option value="$PROJECT_DIR$/src/client/app/components/login/login-form/login-input/login-input.jsx" />
@@ -195,16 +192,28 @@
         <option value="$PROJECT_DIR$/src/server/keys/keys.js" />
         <option value="$PROJECT_DIR$/src/client/app/components/login/custom-login-btn/custom-login-btn.jsx" />
         <option value="$PROJECT_DIR$/src/client/api/ultils-apis/user-ultils.js" />
-        <option value="$PROJECT_DIR$/src/client/api/api.js" />
-        <option value="$PROJECT_DIR$/src/client/api/ultils-apis/user-apis.js" />
-        <option value="$PROJECT_DIR$/src/client/app/layout/login-layout/login-layout.jsx" />
         <option value="$PROJECT_DIR$/src/client/app/layout/home-layout/home-layout.jsx" />
-        <option value="$PROJECT_DIR$/src/server/server.js" />
-        <option value="$PROJECT_DIR$/src/client/app/layout/lgf-layout/lgf-layout.jsx" />
+        <option value="$PROJECT_DIR$/src/client/app/components/login/login-form/login-form.styl" />
         <option value="$PROJECT_DIR$/src/server/controllers/db-ultils.js" />
-        <option value="$PROJECT_DIR$/src/client/services/user-info.js" />
+        <option value="$PROJECT_DIR$/src/server/server.js" />
+        <option value="$PROJECT_DIR$/src/client/api/ultils-apis/user-apis.js" />
         <option value="$PROJECT_DIR$/src/server/controllers/user-ultils.js" />
+        <option value="$PROJECT_DIR$/src/client/api/api.js" />
+        <option value="$PROJECT_DIR$/src/client/styl/styles.styl" />
+        <option value="$PROJECT_DIR$/src/client/services/user-info.js" />
+        <option value="$PROJECT_DIR$/src/client/app/components/login/sign-up-form/sign-up-form.jsx" />
+        <option value="$PROJECT_DIR$/src/client/app/components/login/sign-up-form/sign-up-form.styl" />
+        <option value="$PROJECT_DIR$/src/client/app/layout/login-layout/login-layout.jsx" />
+        <option value="$PROJECT_DIR$/src/client/app/components/login/login.jsx" />
         <option value="$PROJECT_DIR$/src/client/app/routes/main-routes.js" />
+        <option value="$PROJECT_DIR$/src/client/app/components/animation/fade/fade.styl" />
+        <option value="$PROJECT_DIR$/src/client/app/components/animation/fade/fade.jsx" />
+        <option value="$PROJECT_DIR$/src/client/app/layout/lgf-layout/lgf-layout.jsx" />
+        <option value="$PROJECT_DIR$/src/client/app/components/animation/fade.jsx" />
+        <option value="$PROJECT_DIR$/src/client/app/components/animation/slide.jsx" />
+        <option value="$PROJECT_DIR$/src/client/app/layout/lgf-layout/lgf-layout.styl" />
+        <option value="$PROJECT_DIR$/src/client/app/components/warning/warning.styl" />
+        <option value="$PROJECT_DIR$/src/client/app/components/warning/warning.jsx" />
       </list>
     </option>
   </component>
@@ -243,6 +252,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -309,7 +319,36 @@
               <item name="client" type="462c0819:PsiDirectoryNode" />
               <item name="app" type="462c0819:PsiDirectoryNode" />
               <item name="components" type="462c0819:PsiDirectoryNode" />
+              <item name="animation" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="kappa" type="b2602c69:ProjectViewProjectNode" />
+              <item name="kappa" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="client" type="462c0819:PsiDirectoryNode" />
+              <item name="app" type="462c0819:PsiDirectoryNode" />
+              <item name="components" type="462c0819:PsiDirectoryNode" />
               <item name="login" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="kappa" type="b2602c69:ProjectViewProjectNode" />
+              <item name="kappa" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="client" type="462c0819:PsiDirectoryNode" />
+              <item name="app" type="462c0819:PsiDirectoryNode" />
+              <item name="components" type="462c0819:PsiDirectoryNode" />
+              <item name="login" type="462c0819:PsiDirectoryNode" />
+              <item name="login-form" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="kappa" type="b2602c69:ProjectViewProjectNode" />
+              <item name="kappa" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="client" type="462c0819:PsiDirectoryNode" />
+              <item name="app" type="462c0819:PsiDirectoryNode" />
+              <item name="components" type="462c0819:PsiDirectoryNode" />
+              <item name="login" type="462c0819:PsiDirectoryNode" />
+              <item name="sign-up-form" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="kappa" type="b2602c69:ProjectViewProjectNode" />
@@ -326,6 +365,15 @@
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="client" type="462c0819:PsiDirectoryNode" />
               <item name="app" type="462c0819:PsiDirectoryNode" />
+              <item name="components" type="462c0819:PsiDirectoryNode" />
+              <item name="warning" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="kappa" type="b2602c69:ProjectViewProjectNode" />
+              <item name="kappa" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="client" type="462c0819:PsiDirectoryNode" />
+              <item name="app" type="462c0819:PsiDirectoryNode" />
               <item name="layout" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -335,7 +383,7 @@
               <item name="client" type="462c0819:PsiDirectoryNode" />
               <item name="app" type="462c0819:PsiDirectoryNode" />
               <item name="layout" type="462c0819:PsiDirectoryNode" />
-              <item name="login-layout" type="462c0819:PsiDirectoryNode" />
+              <item name="lgf-layout" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="kappa" type="b2602c69:ProjectViewProjectNode" />
@@ -399,7 +447,6 @@
         </subPane>
       </pane>
       <pane id="Scope" />
-      <pane id="Scratches" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -410,18 +457,18 @@
     <property name="HbShouldOpenHtmlAsHb" value="" />
   </component>
   <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="D:\kappa\src\client\app\components\login\sign-up-form" />
-      <recent name="D:\kappa\src\client\app\components" />
-      <recent name="D:\kappa\src\client\app\layout\login-layout" />
-      <recent name="D:\kappa\src\client\app\layout\lgf-layout" />
-      <recent name="D:\react-template\src" />
-    </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="D:\react-template\src\server" />
       <recent name="D:\react-template\src\client\styl" />
       <recent name="D:\react-template\src" />
       <recent name="D:\react-template" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\kappa\src\client\app\components\animation" />
+      <recent name="D:\kappa\src\client\app\components\login\sign-up-form" />
+      <recent name="D:\kappa\src\client\app\components" />
+      <recent name="D:\kappa\src\client\app\layout\login-layout" />
+      <recent name="D:\kappa\src\client\app\layout\lgf-layout" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -454,7 +501,8 @@
       <workItem from="1516886989387" duration="7256000" />
       <workItem from="1516968881572" duration="6328000" />
       <workItem from="1517027377649" duration="8677000" />
-      <workItem from="1517059338634" duration="6593000" />
+      <workItem from="1517059338634" duration="6609000" />
+      <workItem from="1517194772083" duration="12715000" />
     </task>
     <task id="LOCAL-00001" summary="first">
       <created>1516873779298</created>
@@ -470,11 +518,18 @@
       <option name="project" value="LOCAL" />
       <updated>1516896633157</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="third">
+      <created>1517065975096</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1517065975096</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="42849000" />
+    <option name="totallyTimeSpent" value="55580000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-9" y="-9" width="1938" height="1048" extended-state="6" />
@@ -509,36 +564,14 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="first" />
     <MESSAGE value="sec" />
-    <option name="LAST_COMMIT_MESSAGE" value="sec" />
+    <MESSAGE value="third" />
+    <option name="LAST_COMMIT_MESSAGE" value="third" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/.babelrc">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/light-form-react/dom-mods/lf-bind/lf-bind.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/client/ultils-apis.js" />
-    <entry file="file://$PROJECT_DIR$/src/routes" />
-    <entry file="file://$PROJECT_DIR$/public/js/app.jsx">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/webpack.config.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="176">
@@ -621,24 +654,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/client/app/components/login/sign-up-form/sign-up-form.styl">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="858">
-          <caret line="39" column="7" lean-forward="false" selection-start-line="39" selection-start-column="7" selection-end-line="39" selection-end-column="7" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/client/app/layout/lgf-layout/lgf-layout.styl">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="271">
-          <caret line="35" column="18" lean-forward="false" selection-start-line="35" selection-start-column="18" selection-end-line="35" selection-end-column="18" />
-          <folding>
-            <marker date="1516969794828" expanded="true" signature="11:979" ph="{...}" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/client/app/components/login/switch/switch.js" />
     <entry file="file://$PROJECT_DIR$/package.json">
       <provider selected="true" editor-type-id="text-editor">
@@ -652,6 +667,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="308">
           <caret line="14" column="25" lean-forward="false" selection-start-line="14" selection-start-column="25" selection-end-line="14" selection-end-column="25" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -667,22 +683,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="374">
           <caret line="17" column="30" lean-forward="true" selection-start-line="17" selection-start-column="30" selection-end-line="17" selection-end-column="30" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$APPLICATION_HOME_DIR$/plugins/JavaScriptLanguage/jsLanguageServicesImpl/external/react.d.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1064">
-          <caret line="2926" column="8" lean-forward="false" selection-start-line="2926" selection-start-column="8" selection-end-line="2926" selection-end-column="8" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/client/app/components/login/login-form/login-form.styl">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="242">
-          <caret line="11" column="28" lean-forward="false" selection-start-line="11" selection-start-column="28" selection-end-line="11" selection-end-column="28" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -694,36 +694,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/client/services/validate-form.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="132">
-          <caret line="6" column="24" lean-forward="false" selection-start-line="6" selection-start-column="24" selection-end-line="6" selection-end-column="24" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/client/app/components/validate-icon/validate-icon.jsx">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="264">
           <caret line="12" column="78" lean-forward="false" selection-start-line="12" selection-start-column="78" selection-end-line="12" selection-end-column="78" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/client/app/components/login/sign-up-form/sign-up-form.jsx">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="748">
-          <caret line="34" column="68" lean-forward="false" selection-start-line="34" selection-start-column="68" selection-end-line="34" selection-end-column="68" />
-          <folding>
-            <element signature="e#0#26#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/client/styl/styles.styl">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="242">
-          <caret line="11" column="72" lean-forward="false" selection-start-line="11" selection-start-column="72" selection-end-line="11" selection-end-column="72" />
           <folding />
         </state>
       </provider>
@@ -750,7 +724,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="66">
           <caret line="3" column="0" lean-forward="false" selection-start-line="3" selection-start-column="0" selection-end-line="3" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -758,14 +731,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="44">
           <caret line="2" column="18" lean-forward="false" selection-start-line="2" selection-start-column="18" selection-end-line="2" selection-end-column="18" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/server/keys/keys.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="176">
-          <caret line="8" column="0" lean-forward="false" selection-start-line="8" selection-start-column="0" selection-end-line="8" selection-end-column="0" />
           <folding />
         </state>
       </provider>
@@ -786,46 +751,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/client/app/components/login/custom-login-btn/custom-login-btn.jsx">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="44">
-          <caret line="2" column="52" lean-forward="false" selection-start-line="2" selection-start-column="52" selection-end-line="2" selection-end-column="52" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/client/api/api.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="770">
-          <caret line="35" column="0" lean-forward="false" selection-start-line="35" selection-start-column="0" selection-end-line="35" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/client/app/components/login/login.jsx">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="176">
-          <caret line="9" column="13" lean-forward="false" selection-start-line="9" selection-start-column="13" selection-end-line="9" selection-end-column="13" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/client/app/layout/login-layout/login-layout.jsx">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="154">
-          <caret line="8" column="30" lean-forward="false" selection-start-line="8" selection-start-column="30" selection-end-line="8" selection-end-column="30" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/server/controllers/db-ultils.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="132">
-          <caret line="6" column="11" lean-forward="false" selection-start-line="6" selection-start-column="11" selection-end-line="6" selection-end-column="11" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/client/app/layout/home-layout/home-layout.jsx">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="242">
@@ -834,62 +759,216 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/client/app/layout/lgf-layout/lgf-layout.jsx">
+    <entry file="file://$PROJECT_DIR$/src/client/app/components/login/custom-login-btn/custom-login-btn.jsx">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="195">
-          <caret line="18" column="70" lean-forward="false" selection-start-line="18" selection-start-column="70" selection-end-line="18" selection-end-column="70" />
-          <folding>
-            <element signature="e#0#26#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/client/services/user-info.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="242">
-          <caret line="11" column="34" lean-forward="false" selection-start-line="11" selection-start-column="34" selection-end-line="11" selection-end-column="34" />
+        <state relative-caret-position="44">
+          <caret line="2" column="13" lean-forward="false" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/client/api/ultils-apis/user-apis.js">
+    <entry file="file://$PROJECT_DIR$/src/server/keys/keys.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="176">
-          <caret line="8" column="18" lean-forward="false" selection-start-line="8" selection-start-column="18" selection-end-line="8" selection-end-column="18" />
+        <state relative-caret-position="83">
+          <caret line="6" column="4" lean-forward="false" selection-start-line="6" selection-start-column="4" selection-end-line="6" selection-end-column="4" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/server/controllers/user-ultils.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="132">
-          <caret line="6" column="47" lean-forward="false" selection-start-line="6" selection-start-column="47" selection-end-line="6" selection-end-column="47" />
+        <state relative-caret-position="173">
+          <caret line="9" column="31" lean-forward="false" selection-start-line="9" selection-start-column="31" selection-end-line="9" selection-end-column="31" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/client/app/components/login/login-form/login-form.jsx">
+    <entry file="file://$PROJECT_DIR$/src/server/controllers/db-ultils.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="286">
-          <caret line="19" column="36" lean-forward="false" selection-start-line="19" selection-start-column="36" selection-end-line="19" selection-end-column="36" />
+        <state relative-caret-position="110">
+          <caret line="5" column="46" lean-forward="false" selection-start-line="5" selection-start-column="46" selection-end-line="5" selection-end-column="46" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/client/services/validate-form.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="34" lean-forward="false" selection-start-line="0" selection-start-column="34" selection-end-line="0" selection-end-column="34" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/client/styl/styles.styl">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="264">
+          <caret line="12" column="47" lean-forward="false" selection-start-line="12" selection-start-column="47" selection-end-line="12" selection-end-column="47" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/server/server.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-25">
+          <caret line="14" column="5" lean-forward="false" selection-start-line="14" selection-start-column="5" selection-end-line="14" selection-end-column="5" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/client/api/api.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="198">
+          <caret line="9" column="10" lean-forward="false" selection-start-line="9" selection-start-column="10" selection-end-line="9" selection-end-column="10" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/client/api/ultils-apis/user-apis.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="66">
+          <caret line="3" column="24" lean-forward="false" selection-start-line="3" selection-start-column="24" selection-end-line="3" selection-end-column="24" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$APPLICATION_HOME_DIR$/plugins/JavaScriptLanguage/jsLanguageServicesImpl/external/react.d.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="272">
+          <caret line="2609" column="8" lean-forward="false" selection-start-line="2609" selection-start-column="8" selection-end-line="2609" selection-end-column="8" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/client/services/user-info.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="660">
+          <caret line="30" column="22" lean-forward="false" selection-start-line="30" selection-start-column="22" selection-end-line="30" selection-end-column="22" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/client/app/layout/login-layout/login-layout.jsx">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="154">
+          <caret line="8" column="0" lean-forward="false" selection-start-line="8" selection-start-column="0" selection-end-line="8" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/client/app/components/login/login.jsx">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="154">
+          <caret line="8" column="30" lean-forward="false" selection-start-line="8" selection-start-column="30" selection-end-line="8" selection-end-column="30" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/client/app/components/login/login-form/login-form.styl">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="66">
+          <caret line="3" column="7" lean-forward="false" selection-start-line="3" selection-start-column="7" selection-end-line="3" selection-end-column="7" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/client/app/components/animation/fade/fade.styl">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="352">
+          <caret line="16" column="1" lean-forward="false" selection-start-line="16" selection-start-column="1" selection-end-line="16" selection-end-column="1" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/client/app/components/animation/fade.jsx">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="88">
+          <caret line="4" column="18" lean-forward="false" selection-start-line="4" selection-start-column="18" selection-end-line="4" selection-end-column="18" />
           <folding>
             <element signature="e#0#26#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/server/server.js">
+    <entry file="file://$PROJECT_DIR$/src/client/app/routes/main-routes.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="682">
-          <caret line="43" column="29" lean-forward="false" selection-start-line="43" selection-start-column="29" selection-end-line="43" selection-end-column="29" />
+        <state relative-caret-position="264">
+          <caret line="12" column="44" lean-forward="false" selection-start-line="12" selection-start-column="44" selection-end-line="12" selection-end-column="44" />
+          <folding>
+            <element signature="e#0#26#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/client/app/components/login/login-form/login-form.jsx">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="176">
+          <caret line="8" column="21" lean-forward="false" selection-start-line="8" selection-start-column="21" selection-end-line="8" selection-end-column="21" />
+          <folding>
+            <element signature="e#0#26#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/client/app/components/login/sign-up-form/sign-up-form.jsx">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="330">
+          <caret line="36" column="68" lean-forward="false" selection-start-line="36" selection-start-column="68" selection-end-line="36" selection-end-column="68" />
+          <folding>
+            <element signature="e#0#26#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/client/app/layout/lgf-layout/lgf-layout.jsx">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="393">
+          <caret line="56" column="46" lean-forward="false" selection-start-line="56" selection-start-column="46" selection-end-line="56" selection-end-column="46" />
+          <folding>
+            <element signature="e#0#26#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/client/app/components/login/sign-up-form/sign-up-form.styl">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-37">
+          <caret line="0" column="13" lean-forward="false" selection-start-line="0" selection-start-column="13" selection-end-line="0" selection-end-column="13" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/client/app/routes/main-routes.js">
+    <entry file="file://$PROJECT_DIR$/src/client/app/layout/lgf-layout/lgf-layout.styl">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="198">
-          <caret line="9" column="48" lean-forward="true" selection-start-line="9" selection-start-column="48" selection-end-line="9" selection-end-column="48" />
+        <state relative-caret-position="535">
+          <caret line="60" column="33" lean-forward="false" selection-start-line="60" selection-start-column="33" selection-end-line="60" selection-end-column="33" />
+          <folding>
+            <marker date="1517209381796" expanded="true" signature="11:1114" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/client/app/components/animation/slide.jsx">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="330">
+          <caret line="15" column="15" lean-forward="false" selection-start-line="15" selection-start-column="15" selection-end-line="15" selection-end-column="15" />
+          <folding>
+            <element signature="e#0#26#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/client/app/components/warning/warning.styl">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="601">
+          <caret line="32" column="23" lean-forward="false" selection-start-line="32" selection-start-column="23" selection-end-line="32" selection-end-column="23" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/client/app/components/warning/warning.jsx">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="550">
+          <caret line="25" column="26" lean-forward="true" selection-start-line="25" selection-start-column="26" selection-end-line="25" selection-end-column="26" />
           <folding>
             <element signature="e#0#26#0" expanded="true" />
           </folding>
