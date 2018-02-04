@@ -1,0 +1,48 @@
+import {userApi} from "../../api/ultils-api/user-api";
+
+let userInfo=()=>{
+  let info=localStorage.getItem("userInfo");
+  return info ? JSON.parse(info) : null;
+};
+
+let userServices={
+    getInfo:()=>userInfo(),
+    loginByFB:(user)=>{
+        return new Promise((res,rej)=>{
+            return userApi.loginFBUser(user).then(({token})=>{
+                console.log(token);
+                localStorage.setItem("userInfo",JSON.stringify(user));
+                localStorage.setItem("userToken",token);
+                res();
+            }).catch((err)=>{
+                console.log(err);
+                rej();
+            })
+        });
+    },
+    regularLogin:(user)=>{
+        return new Promise((res,rej)=>{
+            return userApi.loginRegUser(user).then((data)=>{
+                if(data.hasOwnProperty("msg")){
+                    res(data.msg);
+                }
+                localStorage.setItem("userInfo",JSON.stringify(user));
+                localStorage.setItem("userToken",data.token);
+                res();
+            }).catch((err)=>{
+                rej();
+            })
+        });
+    },
+    saveUser:(user)=>{
+        return new Promise((res,rej)=>{
+            return userApi.saveUser(user).then(()=>{
+                res();
+            }).catch((err)=>{
+                rej();
+            })
+        });
+    }
+};
+
+export {userServices};

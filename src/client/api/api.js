@@ -1,14 +1,15 @@
 let request = (url, type, data) => new Promise((resolve, reject) => {
     let ajaxConfig = {
         url: url,
-        contentType:"application/json",
+        contentType: "application/json",
         type: type,
         beforeSend: (xhr) => {
-            xhr.setRequestHeader('Authorization', `Bearer ${localStorage.getItem("playerToken")}`)},
+            xhr.setRequestHeader('Authorization', `Bearer ${localStorage.getItem("userToken")}`)
+        },
         success: (data) => {
             resolve(data);
         },
-        error:  (err) => {
+        error: (err) => {
             reject(err);
         }
     };

@@ -1,45 +1,52 @@
-const express=require("express");
-const path=require("path");
-const bodyParser=require("body-parser");
-const keys=require("./keys/keys");
-const app=express();
-const validRoutes=["/login","/home"];
-const mysql=require("mysql");
+const express = require("express");
+const path = require("path");
+const bodyParser = require("body-parser");
+const keys = require("./keys/keys");
+const app = express();
+const validRoutes = ["/login", "/home"];
+const mysql = require("mysql");
+const jwtAuth = require("./authorization/jwt-auth");
 
 app.use(express.static("./public"));
 app.use(bodyParser.json());
-app.use("/api/db",(req,res,next)=>{ //ask for private
-    if(req.query.key===keys.serverKey){
-        console.log("match");
-        next();
-    }
-});
+// app.use("/api/db",(req,res,next)=>{ //ask for private
+//     if(req.query.key===keys.serverKey){
+//         console.log("match");
+//         next();
+//     }
+// });
+app.use("/api/auth", jwtAuth.authorPlayer);
 const port = 2000;
 
-const db= mysql.createConnection({
-    host:"localhost",
-    user:"root",
-    database:"kappa-social"
+const db = mysql.createConnection({
+    host: "localhost",
+    user: "root",
+    database: "kappa-social"
 });
 
-db.connect((err)=>{
-    if(err) throw err;
+db.connect((err) => {
+    if (err) throw err;
     console.log("Connect successfully");
 });
 
 
-app.get(validRoutes,(req,res)=>{
+// const redirectRoute=(req,res,next)=>{
+//   console.log(req.baseURL);
+//   next();
+// };
+
+
+app.get(validRoutes, (req, res) => {
     console.log("valid");
     res.sendFile(path.resolve(__dirname, "../../public/index.html"));
 });
 
 
-
-const server=app.listen(port,()=>{
+const server = app.listen(port, () => {
     console.log(`Listen on port ${port}...`);
 });
 
-require("./sockets/socket")(server,app);
-require("./controllers/db-ultils")(app,db);
-require("./controllers/user-ultils")(app,db);
+require("./sockets/socket")(server, app);
+require("./controllers/db-controller")(app, db);
+require("./controllers/user-controller")(app, db);
 
