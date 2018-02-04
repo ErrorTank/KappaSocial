@@ -13,8 +13,8 @@ export class MainRoutes extends React.Component{
             <div>
                 <Router history={customHistory}>
                     <Switch>
-                        <Route path="/login" component={RegistedRoute} exact/>
                         <Route path="/home" component={HomeLayout} exact/>
+                        <Route path="/login" component={RegistedRoute}/>
                     </Switch>
                 </Router>
                 {/*<ModalRegistry/>*/}

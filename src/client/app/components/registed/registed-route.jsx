@@ -38,10 +38,9 @@ export class RegistedRoute extends React.Component {
         let form = currentForm === "login" ?
             (<LoginForm
                     switchForm={() => this.setState({currentForm: "signup"})}
-                />
-            ) :
+             />) :
             (<SignUpForm
-                switchForm={() => this.setState({currentForm: "login"})}
+                    switchForm={() => this.setState({currentForm: "login"})}
             />);
 
         return (
@@ -64,7 +63,11 @@ export class RegistedRoute extends React.Component {
                     </div>
                     <div className={`${currentForm==="login" ? "login-form-wrapper" : "signup-form-wrapper"}`}>
                         <TransitionGroup>
-                            <Fade key={currentForm} timeout={300} className="form">
+                            <Fade key={currentForm}
+                                  timeout={300}
+                                  className="form-fade"
+
+                            >
                                 {form}
                             </Fade>)
                         </TransitionGroup>

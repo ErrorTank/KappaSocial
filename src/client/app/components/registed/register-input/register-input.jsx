@@ -2,7 +2,7 @@ import React from "react";
 import {ValidateIcon} from "../../validate-icon/validate-icon";
 
 //TODO: gop 2 component lam 1
-export class LoginInput extends React.Component {
+export class RegisterInput extends React.Component {
     constructor(props) {
         super(props);
         this.state = {

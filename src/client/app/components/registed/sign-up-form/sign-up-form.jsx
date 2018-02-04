@@ -4,7 +4,7 @@ import {formValidator} from "../../../services/validate-form";
 import {userServices} from "../../../services/user-info";
 import {customHistory} from "../../../main-routes";
 import {Warning} from "../warning/warning";
-import {LoginInput} from "../login-input/login-input";
+import {LoginInput} from "../register-input/register-input";
 import {TransitionGroup} from "react-transition-group";
 import {Slide} from "../../../common/animation/slide";
 import {Loading} from "../../../common/loading/loading";
@@ -45,7 +45,7 @@ export class SignUpForm extends React.Component {
         return (
             <div className="signup-form">
                 <TransitionGroup>
-                    <Slide key="warn-signup" className="warn" timeout={300}>
+                    <Slide key="signup-warning" className="warning-slide" timeout={300}>
                         {showWarning && <Warning msg={warningMsg}/>}
                     </Slide>
                 </TransitionGroup>

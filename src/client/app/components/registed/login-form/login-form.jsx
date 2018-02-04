@@ -1,5 +1,5 @@
 import React from "react";
-import {LoginInput} from "../login-input/login-input";
+import {LoginInput} from "../register-input/register-input";
 import {Switch} from "../switch/switch";
 import {userServices} from "../../../services/user-info";
 import {customHistory} from "../../../main-routes";
@@ -44,11 +44,18 @@ export class LoginForm extends React.Component {
         let validCount = [isEmail(email), isPassword(pass)].filter(element => !!element);
         return (
             <div className="login-form">
+                <button onClick={()=>this.setState({showWarning:!this.state.showWarning})}>dasd</button>
                 <TransitionGroup>
-                    <Slide key="warn-login" className="warn" timeout={300}>
+                    <Slide key="warning-login"
+                           className="warning-slide"
+                           timeout={300}
+                           onEntering={() => console.log("iam enter")}
+                           onExiting={() => console.log("exit")}
+                    >
                         {showWarning && <Warning msg={warningMsg}/>}
                     </Slide>
                 </TransitionGroup>
+
 
                 <form
                     onSubmit={(e) => {

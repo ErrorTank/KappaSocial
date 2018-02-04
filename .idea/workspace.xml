@@ -1,61 +1,26 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
-  <component name="BookmarkManager">
-    <bookmark url="file://$PROJECT_DIR$/src/server/server.js" line="2" />
-  </component>
   <component name="ChangeListManager">
-    <list default="true" id="4d06d219-9297-4e46-b988-13fee6355a8b" name="Default" comment="third">
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/client/api/secure/private-loader.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/client/api/ultils-api/user-api.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/client/app/common/loading/loading.jsx" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/client/app/common/loading/loading.styl" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/client/app/common/modal/modal.jsx" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/client/app/common/modal/modal.styl" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/client/app/common/modal/modals.jsx" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/client/app/components/registed/login-form/login-form.jsx" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/client/app/components/registed/registed-route.jsx" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/client/app/components/registed/warning/warning.jsx" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/client/app/main-routes.js" />
+    <list default="true" id="c4d9b71f-f630-484c-b1a3-7fe8cc315335" name="Default" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" afterPath="$PROJECT_DIR$/.idea/modules.xml" />
+      <change beforePath="$PROJECT_DIR$/.idea/react-template.iml" afterPath="" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change beforePath="$PROJECT_DIR$/package-lock.json" afterPath="$PROJECT_DIR$/package-lock.json" />
       <change beforePath="$PROJECT_DIR$/public/bundle.js" afterPath="$PROJECT_DIR$/public/bundle.js" />
-      <change beforePath="$PROJECT_DIR$/src/client/api/api.js" afterPath="$PROJECT_DIR$/src/client/api/api.js" />
-      <change beforePath="$PROJECT_DIR$/src/client/api/ultils-apis/user-apis.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/client/app/components/animation/fade.jsx" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/client/app/components/animation/fade.jsx" afterPath="$PROJECT_DIR$/src/client/app/common/animation/fade.jsx" />
-      <change beforePath="$PROJECT_DIR$/src/client/app/components/animation/slide.jsx" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/client/app/components/animation/slide.jsx" afterPath="$PROJECT_DIR$/src/client/app/common/animation/slide.jsx" />
-      <change beforePath="$PROJECT_DIR$/src/client/app/components/login/custom-login-btn/custom-login-btn.jsx" afterPath="$PROJECT_DIR$/src/client/app/components/registed/custom-login-btn/custom-login-btn.jsx" />
-      <change beforePath="$PROJECT_DIR$/src/client/app/components/login/custom-login-btn/custom-login-btn.styl" afterPath="$PROJECT_DIR$/src/client/app/components/registed/custom-login-btn/custom-login-btn.styl" />
-      <change beforePath="$PROJECT_DIR$/src/client/app/components/login/login-form/login-form.jsx" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/client/app/components/login/login-form/login-form.styl" afterPath="$PROJECT_DIR$/src/client/app/components/registed/login-form/login-form.styl" />
-      <change beforePath="$PROJECT_DIR$/src/client/app/components/login/login-form/login-input/login-input.jsx" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/client/app/components/login/login-form/login-input/login-input.styl" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/client/app/components/login/login.jsx" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/client/app/components/login/login.jsx" afterPath="$PROJECT_DIR$/src/client/app/components/layout/registed-layout/registed-layout.jsx" />
-      <change beforePath="$PROJECT_DIR$/src/client/app/components/login/login.styl" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/client/app/components/login/login.styl" afterPath="$PROJECT_DIR$/src/client/app/components/layout/registed-layout/registed-layout.styl" />
-      <change beforePath="$PROJECT_DIR$/src/client/app/components/login/sign-up-form/fancy-input/fancy-input.jsx" afterPath="$PROJECT_DIR$/src/client/app/components/registed/login-input/login-input.jsx" />
-      <change beforePath="$PROJECT_DIR$/src/client/app/components/login/sign-up-form/fancy-input/fancy-input.styl" afterPath="$PROJECT_DIR$/src/client/app/components/registed/login-input/login-input.styl" />
-      <change beforePath="$PROJECT_DIR$/src/client/app/components/login/sign-up-form/sign-up-form.jsx" afterPath="$PROJECT_DIR$/src/client/app/components/registed/sign-up-form/sign-up-form.jsx" />
-      <change beforePath="$PROJECT_DIR$/src/client/app/components/login/sign-up-form/sign-up-form.styl" afterPath="$PROJECT_DIR$/src/client/app/components/registed/sign-up-form/sign-up-form.styl" />
-      <change beforePath="$PROJECT_DIR$/src/client/app/components/login/switch/switch.jsx" afterPath="$PROJECT_DIR$/src/client/app/components/registed/switch/switch.jsx" />
-      <change beforePath="$PROJECT_DIR$/src/client/app/components/login/switch/switch.styl" afterPath="$PROJECT_DIR$/src/client/app/components/registed/switch/switch.styl" />
-      <change beforePath="$PROJECT_DIR$/src/client/app/components/warning/warning.jsx" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/client/app/components/warning/warning.styl" afterPath="$PROJECT_DIR$/src/client/app/components/registed/warning/warning.styl" />
-      <change beforePath="$PROJECT_DIR$/src/client/app/layout/home-layout/home-layout.jsx" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/client/app/layout/home-layout/home-layout.jsx" afterPath="$PROJECT_DIR$/src/client/app/components/layout/home-layout/home-layout.jsx" />
-      <change beforePath="$PROJECT_DIR$/src/client/app/layout/lgf-layout/lgf-layout.jsx" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/client/app/layout/lgf-layout/lgf-layout.styl" afterPath="$PROJECT_DIR$/src/client/app/components/registed/registed-route.styl" />
-      <change beforePath="$PROJECT_DIR$/src/client/app/routes/main-routes.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/client/loader.js" afterPath="$PROJECT_DIR$/src/client/loader.js" />
-      <change beforePath="$PROJECT_DIR$/src/client/services/private-loaders.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/client/services/user-info.js" afterPath="$PROJECT_DIR$/src/client/app/services/user-info.js" />
-      <change beforePath="$PROJECT_DIR$/src/client/services/validate-form.js" afterPath="$PROJECT_DIR$/src/client/app/services/validate-form.js" />
+      <change beforePath="$PROJECT_DIR$/src/client/app/common/animation/fade.jsx" afterPath="$PROJECT_DIR$/src/client/app/common/animation/fade.jsx" />
+      <change beforePath="$PROJECT_DIR$/src/client/app/common/animation/slide.jsx" afterPath="$PROJECT_DIR$/src/client/app/common/animation/slide.jsx" />
+      <change beforePath="$PROJECT_DIR$/src/client/app/components/registed/login-form/login-form.jsx" afterPath="$PROJECT_DIR$/src/client/app/components/registed/login-form/login-form.jsx" />
+      <change beforePath="$PROJECT_DIR$/src/client/app/components/registed/login-form/login-form.styl" afterPath="$PROJECT_DIR$/src/client/app/components/registed/login-form/login-form.styl" />
+      <change beforePath="$PROJECT_DIR$/src/client/app/components/registed/login-input/login-input.jsx" afterPath="$PROJECT_DIR$/src/client/app/components/registed/register-input/register-input.jsx" />
+      <change beforePath="$PROJECT_DIR$/src/client/app/components/registed/login-input/login-input.styl" afterPath="$PROJECT_DIR$/src/client/app/components/registed/register-input/register-input.styl" />
+      <change beforePath="$PROJECT_DIR$/src/client/app/components/registed/registed-route.jsx" afterPath="$PROJECT_DIR$/src/client/app/components/registed/registed-route.jsx" />
+      <change beforePath="$PROJECT_DIR$/src/client/app/components/registed/registed-route.styl" afterPath="$PROJECT_DIR$/src/client/app/components/registed/registed-route.styl" />
+      <change beforePath="$PROJECT_DIR$/src/client/app/components/registed/sign-up-form/sign-up-form.jsx" afterPath="$PROJECT_DIR$/src/client/app/components/registed/sign-up-form/sign-up-form.jsx" />
+      <change beforePath="$PROJECT_DIR$/src/client/app/components/registed/sign-up-form/sign-up-form.styl" afterPath="$PROJECT_DIR$/src/client/app/components/registed/sign-up-form/sign-up-form.styl" />
+      <change beforePath="$PROJECT_DIR$/src/client/app/main-routes.js" afterPath="$PROJECT_DIR$/src/client/app/main-routes.js" />
       <change beforePath="$PROJECT_DIR$/src/client/styl/styles.styl" afterPath="$PROJECT_DIR$/src/client/styl/styles.styl" />
-      <change beforePath="$PROJECT_DIR$/src/server/controllers/db-ultils.js" afterPath="$PROJECT_DIR$/src/server/controllers/db-controller.js" />
-      <change beforePath="$PROJECT_DIR$/src/server/controllers/user-ultils.js" afterPath="$PROJECT_DIR$/src/server/controllers/user-controller.js" />
-      <change beforePath="$PROJECT_DIR$/src/server/server.js" afterPath="$PROJECT_DIR$/src/server/server.js" />
     </list>
+    <ignored path="$PROJECT_DIR$/public/" />
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
     <ignored path="$PROJECT_DIR$/tmp/" />
@@ -67,32 +32,12 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="375">
-      <file leaf-file-name="modal.jsx" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/client/app/common/modal/modal.jsx">
+    <leaf>
+      <file leaf-file-name="login-form.jsx" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/client/app/components/registed/login-form/login-form.jsx">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="198">
-              <caret line="9" column="49" lean-forward="false" selection-start-line="9" selection-start-column="49" selection-end-line="9" selection-end-column="49" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="modal.styl" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/client/app/common/modal/modal.styl">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="22">
-              <caret line="1" column="0" lean-forward="false" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="modals.jsx" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/client/app/common/modal/modals.jsx">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="7" lean-forward="false" selection-start-line="0" selection-start-column="7" selection-end-line="0" selection-end-column="7" />
+            <state relative-caret-position="1408">
+              <caret line="64" column="17" lean-forward="false" selection-start-line="64" selection-start-column="17" selection-end-line="64" selection-end-column="17" />
               <folding>
                 <element signature="e#0#26#0" expanded="true" />
               </folding>
@@ -100,32 +45,14 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="loading.jsx" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/client/app/common/loading/loading.jsx">
+      <file leaf-file-name="register-input.jsx" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/client/app/components/registed/register-input/register-input.jsx">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="264">
-              <caret line="12" column="65" lean-forward="false" selection-start-line="12" selection-start-column="65" selection-end-line="12" selection-end-column="65" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="loading.styl" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/client/app/common/loading/loading.styl">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="110">
-              <caret line="5" column="11" lean-forward="false" selection-start-line="5" selection-start-column="11" selection-end-line="5" selection-end-column="11" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="fade.jsx" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/client/app/common/animation/fade.jsx">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="88">
-              <caret line="5" column="18" lean-forward="false" selection-start-line="5" selection-start-column="18" selection-end-line="5" selection-end-column="18" />
-              <folding />
+            <state relative-caret-position="415">
+              <caret line="32" column="45" lean-forward="false" selection-start-line="32" selection-start-column="45" selection-end-line="32" selection-end-column="45" />
+              <folding>
+                <element signature="e#0#26#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -133,41 +60,85 @@
       <file leaf-file-name="slide.jsx" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/client/app/common/animation/slide.jsx">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="44">
-              <caret line="3" column="6" lean-forward="false" selection-start-line="3" selection-start-column="6" selection-end-line="3" selection-end-column="6" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="home-layout.jsx" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/client/app/components/layout/home-layout/home-layout.jsx">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="110">
-              <caret line="5" column="20" lean-forward="false" selection-start-line="5" selection-start-column="20" selection-end-line="5" selection-end-column="20" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="registed-layout.jsx" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/client/app/components/layout/registed-layout/registed-layout.jsx">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="308">
-              <caret line="14" column="40" lean-forward="false" selection-start-line="14" selection-start-column="40" selection-end-line="14" selection-end-column="40" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="registed-layout.styl" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/client/app/components/layout/registed-layout/registed-layout.styl">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="308">
-              <caret line="14" column="23" lean-forward="false" selection-start-line="14" selection-start-column="22" selection-end-line="14" selection-end-column="23" />
+            <state relative-caret-position="198">
+              <caret line="9" column="34" lean-forward="false" selection-start-line="9" selection-start-column="34" selection-end-line="9" selection-end-column="34" />
               <folding>
-                <marker date="1517665118007" expanded="true" signature="0:1" ph="{...}" />
+                <element signature="e#0#26#0" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="warning.jsx" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/client/app/components/registed/warning/warning.jsx">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="88">
+              <caret line="4" column="13" lean-forward="false" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="13" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="registed-route.styl" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/client/app/components/registed/registed-route.styl">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="51">
+              <caret line="39" column="5" lean-forward="false" selection-start-line="39" selection-start-column="5" selection-end-line="39" selection-end-column="5" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="sign-up-form.styl" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/client/app/components/registed/sign-up-form/sign-up-form.styl">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="0">
+              <caret line="0" column="13" lean-forward="false" selection-start-line="0" selection-start-column="13" selection-end-line="0" selection-end-column="13" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="registed-route.jsx" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/client/app/components/registed/registed-route.jsx">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="591">
+              <caret line="68" column="0" lean-forward="false" selection-start-line="68" selection-start-column="0" selection-end-line="68" selection-end-column="0" />
+              <folding>
+                <element signature="e#0#26#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="sign-up-form.jsx" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/client/app/components/registed/sign-up-form/sign-up-form.jsx">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="462">
+              <caret line="48" column="45" lean-forward="false" selection-start-line="48" selection-start-column="45" selection-end-line="48" selection-end-column="45" />
+              <folding>
+                <element signature="e#0#26#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="fade.jsx" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/client/app/common/animation/fade.jsx">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="220">
+              <caret line="11" column="26" lean-forward="false" selection-start-line="11" selection-start-column="26" selection-end-line="11" selection-end-column="26" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="login-form.styl" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/client/app/components/registed/login-form/login-form.styl">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="205">
+              <caret line="16" column="22" lean-forward="false" selection-start-line="16" selection-start-column="22" selection-end-line="16" selection-end-column="22" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -180,57 +151,15 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/server/authorization/jwt-auth.js" />
-        <option value="$PROJECT_DIR$/src/client/app/components/modal/modals.jsx" />
-        <option value="$PROJECT_DIR$/src/client/app/components/modal/modal.jsx" />
-        <option value="$PROJECT_DIR$/src/client/app/components/loading/loading.jsx" />
-        <option value="$PROJECT_DIR$/src/client/app/components/modal/modal.styl" />
-        <option value="$PROJECT_DIR$/src/client/app/components/btn-with-loader/load-btn.styl" />
-        <option value="$PROJECT_DIR$/src/client/app/components/loading/loading.styl" />
-        <option value="$PROJECT_DIR$/src/client/loader.js" />
-        <option value="$PROJECT_DIR$/src/client/app/components/login/switch/switch.jsx" />
-        <option value="$PROJECT_DIR$/src/client/app/components/login/login-form/login-input/login-input.styl" />
-        <option value="$PROJECT_DIR$/src/server/controllers/user-ultils.js" />
-        <option value="$PROJECT_DIR$/src/server/server.js" />
-        <option value="$PROJECT_DIR$/src/client/api/api.js" />
-        <option value="$PROJECT_DIR$/src/client/api/ultils-apis/user-apis.js" />
-        <option value="$PROJECT_DIR$/src/client/app/components/login/login-form/login-input/login-input.jsx" />
-        <option value="$PROJECT_DIR$/src/client/app/components/login/sign-up-form/fancy-input/fancy-input.jsx" />
-        <option value="$PROJECT_DIR$/src/client/app/layout/lgf-layout/lgf-layout.styl" />
-        <option value="$PROJECT_DIR$/src/client/app/components/login/login.styl" />
-        <option value="$PROJECT_DIR$/src/client/app/routes/main-routes.js" />
-        <option value="$PROJECT_DIR$/src/client/app/components/login/sign-up-form/fancy-input/fancy-input.styl" />
-        <option value="$PROJECT_DIR$/src/client/app/components/login/login-input/login-input.styl" />
-        <option value="$PROJECT_DIR$/src/client/app/components/login/login-input/login-input.jsx" />
-        <option value="$PROJECT_DIR$/src/client/services/user-info.js" />
-        <option value="$PROJECT_DIR$/src/client/api/ultils-api/user-api.js" />
-        <option value="$PROJECT_DIR$/src/client/api/secure/private-loader.js" />
-        <option value="$PROJECT_DIR$/src/client/app/components/login/custom-login-btn/custom-login-btn.jsx" />
-        <option value="$PROJECT_DIR$/src/server/controllers/user-controller.js" />
-        <option value="$PROJECT_DIR$/src/client/app/components/btn-with-loader/load-btn.jsx" />
-        <option value="$PROJECT_DIR$/src/client/app/components/login/login-form/login-form.styl" />
-        <option value="$PROJECT_DIR$/src/client/app/components/warning/warning.styl" />
-        <option value="$PROJECT_DIR$/src/client/styl/styles.styl" />
-        <option value="$PROJECT_DIR$/src/client/app/components/animation/slide.jsx" />
-        <option value="$PROJECT_DIR$/src/client/app/components/login/login-form/login-form.jsx" />
-        <option value="$PROJECT_DIR$/src/client/app/components/login/sign-up-form/sign-up-form.jsx" />
-        <option value="$PROJECT_DIR$/src/client/app/layout/home-layout/home-layout.jsx" />
-        <option value="$PROJECT_DIR$/src/client/app/layout/lgf-layout/lgf-layout.jsx" />
-        <option value="$PROJECT_DIR$/src/client/app/components/login/login.jsx" />
-        <option value="$PROJECT_DIR$/src/client/app/components/login/registed.jsx" />
-        <option value="$PROJECT_DIR$/src/client/app/main-routes.js" />
-        <option value="$PROJECT_DIR$/src/client/common/modal/modals.jsx" />
-        <option value="$PROJECT_DIR$/src/client/app/layout/registed-layout/registed-layout.jsx" />
-        <option value="$PROJECT_DIR$/src/client/app/layout/registed-layout/registed-layout.styl" />
-        <option value="$PROJECT_DIR$/src/client/app/components/registed/registed-route.jsx" />
-        <option value="$PROJECT_DIR$/src/client/app/components/warning/warning.jsx" />
-        <option value="$PROJECT_DIR$/src/client/app/components/registed/warning/warning.jsx" />
         <option value="$PROJECT_DIR$/src/client/app/components/registed/sign-up-form/sign-up-form.styl" />
         <option value="$PROJECT_DIR$/src/client/app/components/registed/registed-route.styl" />
         <option value="$PROJECT_DIR$/src/client/app/components/registed/login-form/login-form.styl" />
-        <option value="$PROJECT_DIR$/src/client/app/components/registed/login-input/login-input.jsx" />
-        <option value="$PROJECT_DIR$/src/client/app/components/registed/login-form/login-form.jsx" />
         <option value="$PROJECT_DIR$/src/client/app/components/registed/sign-up-form/sign-up-form.jsx" />
+        <option value="$PROJECT_DIR$/src/client/app/components/registed/registed-route.jsx" />
+        <option value="$PROJECT_DIR$/src/client/app/common/animation/slide.jsx" />
+        <option value="$PROJECT_DIR$/src/client/app/common/animation/fade.jsx" />
+        <option value="$PROJECT_DIR$/src/client/app/components/registed/login-form/login-form.jsx" />
+        <option value="$PROJECT_DIR$/src/client/app/components/registed/register-input/register-input.jsx" />
       </list>
     </option>
   </component>
@@ -250,9 +179,6 @@
     <option name="y" value="-9" />
     <option name="width" value="1938" />
     <option name="height" value="1048" />
-  </component>
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
-    <ConfirmationsSetting value="2" id="Add" />
   </component>
   <component name="ProjectView">
     <navigator currentView="ProjectPane" proportions="" version="1">
@@ -279,17 +205,6 @@
             <path>
               <item name="kappa" type="b2602c69:ProjectViewProjectNode" />
               <item name="kappa" type="462c0819:PsiDirectoryNode" />
-              <item name="public" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="kappa" type="b2602c69:ProjectViewProjectNode" />
-              <item name="kappa" type="462c0819:PsiDirectoryNode" />
-              <item name="public" type="462c0819:PsiDirectoryNode" />
-              <item name="js" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="kappa" type="b2602c69:ProjectViewProjectNode" />
-              <item name="kappa" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -310,37 +225,70 @@
               <item name="kappa" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="client" type="462c0819:PsiDirectoryNode" />
-              <item name="styl" type="462c0819:PsiDirectoryNode" />
+              <item name="app" type="462c0819:PsiDirectoryNode" />
+              <item name="components" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="kappa" type="b2602c69:ProjectViewProjectNode" />
+              <item name="kappa" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="client" type="462c0819:PsiDirectoryNode" />
+              <item name="app" type="462c0819:PsiDirectoryNode" />
+              <item name="components" type="462c0819:PsiDirectoryNode" />
+              <item name="layout" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="kappa" type="b2602c69:ProjectViewProjectNode" />
+              <item name="kappa" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="client" type="462c0819:PsiDirectoryNode" />
+              <item name="app" type="462c0819:PsiDirectoryNode" />
+              <item name="components" type="462c0819:PsiDirectoryNode" />
+              <item name="registed" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="kappa" type="b2602c69:ProjectViewProjectNode" />
+              <item name="kappa" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="client" type="462c0819:PsiDirectoryNode" />
+              <item name="app" type="462c0819:PsiDirectoryNode" />
+              <item name="components" type="462c0819:PsiDirectoryNode" />
+              <item name="registed" type="462c0819:PsiDirectoryNode" />
+              <item name="login-form" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="kappa" type="b2602c69:ProjectViewProjectNode" />
+              <item name="kappa" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="client" type="462c0819:PsiDirectoryNode" />
+              <item name="app" type="462c0819:PsiDirectoryNode" />
+              <item name="components" type="462c0819:PsiDirectoryNode" />
+              <item name="registed" type="462c0819:PsiDirectoryNode" />
+              <item name="register-input" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="kappa" type="b2602c69:ProjectViewProjectNode" />
+              <item name="kappa" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="client" type="462c0819:PsiDirectoryNode" />
+              <item name="app" type="462c0819:PsiDirectoryNode" />
+              <item name="components" type="462c0819:PsiDirectoryNode" />
+              <item name="registed" type="462c0819:PsiDirectoryNode" />
+              <item name="sign-up-form" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="Scratches" />
       <pane id="Scope" />
+      <pane id="Scratches" />
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="settings.editor.selected.configurable" value="watcher.settings" />
+    <property name="settings.editor.selected.configurable" value="project.scopes" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="HbShouldOpenHtmlAsHb" value="" />
-  </component>
-  <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="D:\kappa\src\client\app\components" />
-      <recent name="D:\kappa\src\client\app" />
-      <recent name="D:\kappa\src\client\app\components\registed" />
-      <recent name="D:\kappa\src\client\common" />
-      <recent name="D:\kappa\src\client\app\components\login" />
-    </key>
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="D:\react-template\src\server" />
-      <recent name="D:\react-template\src\client\styl" />
-      <recent name="D:\react-template\src" />
-      <recent name="D:\react-template" />
-    </key>
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -362,111 +310,41 @@
   </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="4d06d219-9297-4e46-b988-13fee6355a8b" name="Default" comment="" />
-      <created>1516855030419</created>
+      <changelist id="c4d9b71f-f630-484c-b1a3-7fe8cc315335" name="Default" comment="" />
+      <created>1517716350671</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1516855030419</updated>
-      <workItem from="1516855031823" duration="2233000" />
-      <workItem from="1516857458527" duration="11762000" />
-      <workItem from="1516886989387" duration="7256000" />
-      <workItem from="1516968881572" duration="6328000" />
-      <workItem from="1517027377649" duration="8677000" />
-      <workItem from="1517059338634" duration="6609000" />
-      <workItem from="1517194772083" duration="12736000" />
-      <workItem from="1517227497329" duration="1784000" />
-      <workItem from="1517256416239" duration="16592000" />
-      <workItem from="1517571894709" duration="5000000" />
-      <workItem from="1517624246425" duration="8052000" />
-      <workItem from="1517658850456" duration="7312000" />
-      <workItem from="1517710588623" duration="1328000" />
+      <updated>1517716350671</updated>
+      <workItem from="1517716352435" duration="3401000" />
     </task>
-    <task id="LOCAL-00001" summary="first">
-      <created>1516873779298</created>
-      <option name="number" value="00001" />
-      <option name="presentableId" value="LOCAL-00001" />
-      <option name="project" value="LOCAL" />
-      <updated>1516873779298</updated>
-    </task>
-    <task id="LOCAL-00002" summary="sec">
-      <created>1516896633157</created>
-      <option name="number" value="00002" />
-      <option name="presentableId" value="LOCAL-00002" />
-      <option name="project" value="LOCAL" />
-      <updated>1516896633157</updated>
-    </task>
-    <task id="LOCAL-00003" summary="third">
-      <created>1517065975096</created>
-      <option name="number" value="00003" />
-      <option name="presentableId" value="LOCAL-00003" />
-      <option name="project" value="LOCAL" />
-      <updated>1517065975096</updated>
-    </task>
-    <task id="LOCAL-00004" summary="third">
-      <created>1517209592283</created>
-      <option name="number" value="00004" />
-      <option name="presentableId" value="LOCAL-00004" />
-      <option name="project" value="LOCAL" />
-      <updated>1517209592283</updated>
-    </task>
-    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="95669000" />
-  </component>
-  <component name="TodoView">
-    <todo-panel id="selected-file">
-      <is-autoscroll-to-source value="true" />
-    </todo-panel>
-    <todo-panel id="all">
-      <are-packages-shown value="true" />
-      <is-autoscroll-to-source value="true" />
-    </todo-panel>
+    <option name="totallyTimeSpent" value="3401000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-9" y="-9" width="1938" height="1048" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.19249074" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3293979" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Docker" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3293979" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24960339" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Docker" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="npm" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="npm" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.31050768" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
-      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="true" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.31877214" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
     </layout>
-    <layout-to-restore>
-      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
-      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
-      <window_info id="npm" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.6694215" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.19249074" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
-      <window_info id="Docker" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="true" content_ui="tabs" />
-    </layout-to-restore>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
@@ -474,375 +352,105 @@
   <component name="VcsContentAnnotationSettings">
     <option name="myLimit" value="2678400000" />
   </component>
-  <component name="VcsManagerConfiguration">
-    <MESSAGE value="first" />
-    <MESSAGE value="sec" />
-    <MESSAGE value="third" />
-    <option name="LAST_COMMIT_MESSAGE" value="third" />
-  </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/client/services/private-loaders.js" />
-    <entry file="file://$APPLICATION_HOME_DIR$/plugins/JavaScriptLanguage/jsLanguageServicesImpl/external/lib.es2015.promise.d.ts">
+    <entry file="file://$PROJECT_DIR$/package.json">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-3343">
-          <caret line="26" column="4" lean-forward="false" selection-start-line="26" selection-start-column="4" selection-end-line="26" selection-end-column="4" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/utils/fs.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/utils/async-cache.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/utils/cc-util.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/utils/random-util.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/utils/regex-util.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$APPLICATION_HOME_DIR$/plugins/JavaScriptLanguage/jsLanguageServicesImpl/external/lib.dom.d.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="272">
-          <caret line="1771" column="4" lean-forward="false" selection-start-line="1771" selection-start-column="4" selection-end-line="1771" selection-end-column="4" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/node_modules/validator/index.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="176">
-          <caret line="8" column="28" lean-forward="false" selection-start-line="8" selection-start-column="28" selection-end-line="8" selection-end-column="28" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/server/authorization/jwt-auth.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="352">
-          <caret line="16" column="32" lean-forward="true" selection-start-line="16" selection-start-column="32" selection-end-line="16" selection-end-column="32" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/server/keys/keys.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="132">
-          <caret line="6" column="4" lean-forward="false" selection-start-line="6" selection-start-column="4" selection-end-line="6" selection-end-column="4" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/server/controllers/db-controller.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="66">
-          <caret line="3" column="32" lean-forward="false" selection-start-line="3" selection-start-column="32" selection-end-line="3" selection-end-column="32" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/server/server.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="946">
-          <caret line="43" column="0" lean-forward="false" selection-start-line="43" selection-start-column="0" selection-end-line="43" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/client/api/api.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="286">
-          <caret line="14" column="6" lean-forward="false" selection-start-line="14" selection-start-column="6" selection-end-line="14" selection-end-column="6" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/client/app/components/login/sign-up-form/fancy-input/fancy-input.jsx" />
-    <entry file="file://$PROJECT_DIR$/src/client/app/components/login/sign-up-form/fancy-input/fancy-input.styl" />
-    <entry file="file://$PROJECT_DIR$/src/client/api/secure/private-loader.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="396">
-          <caret line="18" column="0" lean-forward="false" selection-start-line="18" selection-start-column="0" selection-end-line="18" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/client/api/ultils-api/user-api.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="88">
-          <caret line="4" column="4" lean-forward="false" selection-start-line="4" selection-start-column="4" selection-end-line="4" selection-end-column="4" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/server/controllers/user-controller.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="308">
-          <caret line="14" column="19" lean-forward="false" selection-start-line="14" selection-start-column="19" selection-end-line="14" selection-end-column="19" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/client/app/components/btn-with-loader/load-btn.jsx" />
-    <entry file="file://$PROJECT_DIR$/src/client/app/components/btn-with-loader/load-btn.styl" />
-    <entry file="file://$PROJECT_DIR$/src/client/app/components/registed/custom-login-btn/custom-login-btn.jsx">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="264">
-          <caret line="12" column="0" lean-forward="false" selection-start-line="12" selection-start-column="0" selection-end-line="12" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/client/app/services/user-info.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="242">
-          <caret line="11" column="62" lean-forward="false" selection-start-line="11" selection-start-column="62" selection-end-line="11" selection-end-column="62" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/client/app/services/validate-form.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="29" lean-forward="false" selection-start-line="0" selection-start-column="29" selection-end-line="0" selection-end-column="29" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/client/loader.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="66">
-          <caret line="7" column="29" lean-forward="false" selection-start-line="7" selection-start-column="29" selection-end-line="7" selection-end-column="29" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/client/app/components/registed/switch/switch.jsx">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="308">
-          <caret line="14" column="26" lean-forward="false" selection-start-line="14" selection-start-column="26" selection-end-line="14" selection-end-column="26" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/client/app/components/registed/switch/switch.styl">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/client/app/components/registed/login-input/login-input.styl">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="88">
-          <caret line="4" column="23" lean-forward="false" selection-start-line="4" selection-start-column="23" selection-end-line="4" selection-end-column="23" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/client/app/main-routes.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="440">
-          <caret line="20" column="18" lean-forward="false" selection-start-line="20" selection-start-column="18" selection-end-line="20" selection-end-column="18" />
-          <folding>
-            <element signature="e#0#26#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/client/styl/styles.styl">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="286">
-          <caret line="13" column="0" lean-forward="false" selection-start-line="13" selection-start-column="0" selection-end-line="13" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/client/app/components/registed/warning/warning.styl">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="220">
-          <caret line="10" column="3" lean-forward="false" selection-start-line="10" selection-start-column="3" selection-end-line="10" selection-end-column="3" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/client/app/components/registed/registed-route.styl">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1364">
-          <caret line="62" column="21" lean-forward="false" selection-start-line="62" selection-start-column="21" selection-end-line="62" selection-end-column="21" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/client/app/components/registed/sign-up-form/sign-up-form.styl">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="88">
-          <caret line="4" column="0" lean-forward="false" selection-start-line="4" selection-start-column="0" selection-end-line="4" selection-end-column="0" />
+        <state relative-caret-position="374">
+          <caret line="32" column="25" lean-forward="false" selection-start-line="32" selection-start-column="25" selection-end-line="32" selection-end-column="25" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/client/app/components/registed/login-form/login-form.styl">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="66">
-          <caret line="3" column="12" lean-forward="false" selection-start-line="3" selection-start-column="12" selection-end-line="3" selection-end-column="12" />
+        <state relative-caret-position="205">
+          <caret line="16" column="22" lean-forward="false" selection-start-line="16" selection-start-column="22" selection-end-line="16" selection-end-column="22" />
           <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/client/app/components/registed/registed-route.jsx">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="660">
-          <caret line="38" column="20" lean-forward="false" selection-start-line="38" selection-start-column="20" selection-end-line="38" selection-end-column="20" />
-          <folding>
-            <element signature="e#0#26#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/client/app/components/registed/sign-up-form/sign-up-form.jsx">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1782">
-          <caret line="90" column="35" lean-forward="false" selection-start-line="90" selection-start-column="35" selection-end-line="90" selection-end-column="35" />
+        <state relative-caret-position="462">
+          <caret line="48" column="45" lean-forward="false" selection-start-line="48" selection-start-column="45" selection-end-line="48" selection-end-column="45" />
           <folding>
             <element signature="e#0#26#0" expanded="true" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/client/app/components/registed/login-input/login-input.jsx">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="308">
-          <caret line="15" column="33" lean-forward="false" selection-start-line="15" selection-start-column="33" selection-end-line="15" selection-end-column="33" />
-          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/client/app/components/registed/warning/warning.jsx">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="154">
-          <caret line="7" column="6" lean-forward="false" selection-start-line="7" selection-start-column="6" selection-end-line="7" selection-end-column="6" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/client/app/components/validate-icon/validate-icon.jsx">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="264">
-          <caret line="12" column="78" lean-forward="false" selection-start-line="12" selection-start-column="78" selection-end-line="12" selection-end-column="78" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/client/app/components/validate-icon/validate-icon.styl">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="264">
-          <caret line="12" column="1" lean-forward="true" selection-start-line="12" selection-start-column="1" selection-end-line="12" selection-end-column="1" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/client/app/components/registed/login-form/login-form.jsx">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="305">
-          <caret line="21" column="10" lean-forward="true" selection-start-line="21" selection-start-column="10" selection-end-line="21" selection-end-column="10" />
-          <folding>
-            <element signature="e#0#26#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/client/app/common/modal/modal.jsx">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="198">
-          <caret line="9" column="49" lean-forward="false" selection-start-line="9" selection-start-column="49" selection-end-line="9" selection-end-column="49" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/client/app/common/modal/modal.styl">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="22">
-          <caret line="1" column="0" lean-forward="false" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/client/app/common/modal/modals.jsx">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="7" lean-forward="false" selection-start-line="0" selection-start-column="7" selection-end-line="0" selection-end-column="7" />
-          <folding>
-            <element signature="e#0#26#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/client/app/common/loading/loading.jsx">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="264">
-          <caret line="12" column="65" lean-forward="false" selection-start-line="12" selection-start-column="65" selection-end-line="12" selection-end-column="65" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/client/app/common/loading/loading.styl">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="110">
-          <caret line="5" column="11" lean-forward="false" selection-start-line="5" selection-start-column="11" selection-end-line="5" selection-end-column="11" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/client/app/common/animation/fade.jsx">
-      <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="88">
-          <caret line="5" column="18" lean-forward="false" selection-start-line="5" selection-start-column="18" selection-end-line="5" selection-end-column="18" />
+          <caret line="4" column="13" lean-forward="false" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="13" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/client/app/common/animation/slide.jsx">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="44">
-          <caret line="3" column="6" lean-forward="false" selection-start-line="3" selection-start-column="6" selection-end-line="3" selection-end-column="6" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/client/app/components/layout/home-layout/home-layout.jsx">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="110">
-          <caret line="5" column="20" lean-forward="false" selection-start-line="5" selection-start-column="20" selection-end-line="5" selection-end-column="20" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/client/app/components/layout/registed-layout/registed-layout.jsx">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="308">
-          <caret line="14" column="40" lean-forward="false" selection-start-line="14" selection-start-column="40" selection-end-line="14" selection-end-column="40" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/client/app/components/layout/registed-layout/registed-layout.styl">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="308">
-          <caret line="14" column="23" lean-forward="false" selection-start-line="14" selection-start-column="22" selection-end-line="14" selection-end-column="23" />
+        <state relative-caret-position="198">
+          <caret line="9" column="34" lean-forward="false" selection-start-line="9" selection-start-column="34" selection-end-line="9" selection-end-column="34" />
           <folding>
-            <marker date="1517665118007" expanded="true" signature="0:1" ph="{...}" />
+            <element signature="e#0#26#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/client/app/common/animation/fade.jsx">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="220">
+          <caret line="11" column="26" lean-forward="false" selection-start-line="11" selection-start-column="26" selection-end-line="11" selection-end-column="26" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/client/app/components/registed/sign-up-form/sign-up-form.styl">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="13" lean-forward="false" selection-start-line="0" selection-start-column="13" selection-end-line="0" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/client/app/components/registed/registed-route.styl">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="51">
+          <caret line="39" column="5" lean-forward="false" selection-start-line="39" selection-start-column="5" selection-end-line="39" selection-end-column="5" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/client/app/components/registed/registed-route.jsx">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="591">
+          <caret line="68" column="0" lean-forward="false" selection-start-line="68" selection-start-column="0" selection-end-line="68" selection-end-column="0" />
+          <folding>
+            <element signature="e#0#26#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/client/app/components/registed/login-form/login-form.jsx">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1408">
+          <caret line="64" column="17" lean-forward="false" selection-start-line="64" selection-start-column="17" selection-end-line="64" selection-end-column="17" />
+          <folding>
+            <element signature="e#0#26#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/client/app/components/registed/register-input/register-input.jsx">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="415">
+          <caret line="32" column="45" lean-forward="false" selection-start-line="32" selection-start-column="45" selection-end-line="32" selection-end-column="45" />
+          <folding>
+            <element signature="e#0#26#0" expanded="true" />
           </folding>
         </state>
       </provider>
