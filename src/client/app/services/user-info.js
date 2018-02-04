@@ -24,11 +24,14 @@ let userServices={
         return new Promise((res,rej)=>{
             return userApi.loginRegUser(user).then((data)=>{
                 if(data.hasOwnProperty("msg")){
+                    console.log("das");
                     res(data.msg);
+                }else{
+                    localStorage.setItem("userInfo",JSON.stringify(user));
+                    localStorage.setItem("userToken",data.token);
+                    res();
                 }
-                localStorage.setItem("userInfo",JSON.stringify(user));
-                localStorage.setItem("userToken",data.token);
-                res();
+
             }).catch((err)=>{
                 rej();
             })

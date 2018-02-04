@@ -1,6 +1,6 @@
 import React from "react";
 
-export class HomeLayout extends React.Component{
+export class NewFeedLayout extends React.Component{
     constructor(props){
         super(props);
         this.state={
@@ -9,7 +9,7 @@ export class HomeLayout extends React.Component{
     render(){
         let {children}=this.props;
         return(
-            <div className="home-layout">
+            <div className="new-feed-layout">
                 {children}
             </div>
         );

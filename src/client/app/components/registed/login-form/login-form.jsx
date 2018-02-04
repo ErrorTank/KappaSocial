@@ -1,15 +1,15 @@
 import React from "react";
-import {LoginInput} from "../register-input/register-input";
+import {LoginInput, RegisterInput} from "../register-input/register-input";
 import {Switch} from "../switch/switch";
 import {userServices} from "../../../services/user-info";
 import {customHistory} from "../../../main-routes";
 import {Warning} from "../warning/warning";
 import {formValidator} from "../../../services/validate-form";
 import {Loading} from "../../../common/loading/loading";
-import {TransitionGroup} from "react-transition-group";
+import {Transition, TransitionGroup} from "react-transition-group";
 import {Slide} from "../../../common/animation/slide";
 
-let warningMsg="";
+let warningMsg = "";
 
 export class LoginForm extends React.Component {
     constructor(props) {
@@ -23,15 +23,21 @@ export class LoginForm extends React.Component {
     };
 
     loginUser = () => {
+        this.setState({loading:true});
         let {email, pass} = this.state;
         let user = {email, pass};
         userServices.regularLogin(user).then((msg = null) => {
-            if (!msg) {
-                customHistory.push("/home");
-            } else {
-                warningMsg = msg === "Wrong pass" ? "Invalid password. Try again!" : "Invalid email. Try again!";
-                this.setState({showWarning: true});
-            }
+            setTimeout(()=>{
+                this.setState({loading:false},()=>{
+                    if (!msg) {
+                        customHistory.push("/");
+                    } else {
+                        warningMsg = msg === "Wrong pass" ? "Invalid password. Try again!" : "Invalid email. Try again!";
+                        this.setState({showWarning: true});
+                    }
+                });
+            },2000);
+
         }).catch((err) => {
 
         });
@@ -44,16 +50,17 @@ export class LoginForm extends React.Component {
         let validCount = [isEmail(email), isPassword(pass)].filter(element => !!element);
         return (
             <div className="login-form">
-                <button onClick={()=>this.setState({showWarning:!this.state.showWarning})}>dasd</button>
+
                 <TransitionGroup>
-                    <Slide key="warning-login"
-                           className="warning-slide"
-                           timeout={300}
-                           onEntering={() => console.log("iam enter")}
-                           onExiting={() => console.log("exit")}
-                    >
-                        {showWarning && <Warning msg={warningMsg}/>}
-                    </Slide>
+                    {showWarning && (
+                        <Slide
+                            className="warning-slide"
+                            timeout={300}
+                        >
+                            <Warning msg={warningMsg}/>
+                        </Slide>
+                    )}
+
                 </TransitionGroup>
 
 
@@ -63,13 +70,13 @@ export class LoginForm extends React.Component {
                         this.loginUser();
                     }}
                 >
-                    <LoginInput
+                    <RegisterInput
                         type="email"
                         placeholder="Email"
                         value={email}
                         onChange={(val) => this.setState({email: val})}
                     />
-                    <LoginInput
+                    <RegisterInput
                         type="password"
                         placeholder="Password"
                         value={pass}

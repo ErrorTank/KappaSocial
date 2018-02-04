@@ -4,7 +4,7 @@ import {formValidator} from "../../../services/validate-form";
 import {userServices} from "../../../services/user-info";
 import {customHistory} from "../../../main-routes";
 import {Warning} from "../warning/warning";
-import {LoginInput} from "../register-input/register-input";
+import {RegisterInput} from "../register-input/register-input";
 import {TransitionGroup} from "react-transition-group";
 import {Slide} from "../../../common/animation/slide";
 import {Loading} from "../../../common/loading/loading";
@@ -25,11 +25,16 @@ export class SignUpForm extends React.Component {
     };
 
     registedUser = () => {
+        this.setState({loading:true});
         let {name, email, pass} = this.state;
         let user = {name, email, pass};
         userServices.saveUser(user).then(() => {
             userServices.regularLogin(user).then(() => {
-                customHistory.push("/home");
+                setTimeout(()=>{
+                    this.setState({loading:false},()=>{
+                        customHistory.push("/");
+                    });
+                },2000);
             })
         }).catch((err) => {
             warningMsg="This email has already existed. Try again!";
@@ -54,7 +59,7 @@ export class SignUpForm extends React.Component {
                     this.registedUser();
                 }}
                 >
-                    <LoginInput
+                    <RegisterInput
                         type="email"
                         placeholder="Email"
                         value={email}
@@ -63,7 +68,7 @@ export class SignUpForm extends React.Component {
                         valid={isEmail(email)}
                         icon={true}
                     />
-                    <LoginInput
+                    <RegisterInput
                         type="text"
                         placeholder="Username"
                         value={name}
@@ -72,7 +77,7 @@ export class SignUpForm extends React.Component {
                         valid={isName(name)}
                         icon={true}
                     />
-                    <LoginInput
+                    <RegisterInput
                         type="password"
                         placeholder="Password"
                         value={pass}
@@ -81,7 +86,7 @@ export class SignUpForm extends React.Component {
                         valid={isPassword(pass)}
                         icon={true}
                     />
-                    <LoginInput
+                    <RegisterInput
                         type="password"
                         placeholder="Re-type password"
                         value={rePass}

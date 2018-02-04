@@ -3,6 +3,24 @@
   width 100%
   top 0
   position absolute
+  .warning-slide-enter {
+    height: 0;
+  }
+
+  .warning-slide-enter.warning-slide-enter-active {
+
+    height:30px;
+    transition: height 0.3s ease;
+  }
+
+  .warning-slide-exit {
+    height 30px;
+  }
+
+  .warning-slide-exit.warning-slide-exit-active {
+    height: 0;
+    transition: height 0.3s ease;
+  }
   form{
     .form-group{
       position relative
