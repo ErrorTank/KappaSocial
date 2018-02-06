@@ -1,5 +1,6 @@
 import React from "react";
 import ReactDOM from "react-dom";
+import {userServices} from "../../../../../../services/user-info";
 
 
 export class ProfileView extends React.Component {
@@ -10,7 +11,7 @@ export class ProfileView extends React.Component {
     };
 
     render() {
-
+        let {name}=userServices.getInfo();
         return (
 
             <div className="profile-view"

@@ -8,9 +8,9 @@ let userInfo=()=>{
 let userServices={
     getInfo:()=>userInfo(),
     loginByFB:(user)=>{
+        console.log(user);
         return new Promise((res,rej)=>{
             return userApi.loginFBUser(user).then(({token})=>{
-                console.log(token);
                 localStorage.setItem("userInfo",JSON.stringify(user));
                 localStorage.setItem("userToken",token);
                 res();
@@ -21,6 +21,7 @@ let userServices={
         });
     },
     regularLogin:(user)=>{
+        console.log(user);
         return new Promise((res,rej)=>{
             return userApi.loginRegUser(user).then((data)=>{
                 if(data.hasOwnProperty("msg")){

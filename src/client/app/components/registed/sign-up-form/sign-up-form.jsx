@@ -50,9 +50,12 @@ export class SignUpForm extends React.Component {
         return (
             <div className="signup-form">
                 <TransitionGroup>
-                    <Slide key="signup-warning" className="warning-slide" timeout={300}>
-                        {showWarning && <Warning msg={warningMsg}/>}
+                    {showWarning &&
+                    <Slide className="warning-slide" timeout={300}>
+                        <Warning msg={warningMsg}/>
                     </Slide>
+                    }
+
                 </TransitionGroup>
                 <form onSubmit={(e) => {
                     e.preventDefault();

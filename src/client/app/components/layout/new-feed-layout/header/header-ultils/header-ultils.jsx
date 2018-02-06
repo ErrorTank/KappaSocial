@@ -13,8 +13,9 @@ export class HeaderUltils extends React.Component {
         };
 
     };
-    handleClickOut=()=>{
-        this.setState({showProfile:false});
+    handleClickOut=(eClass=[])=>{
+        if(!eClass.length || eClass.split(" ").indexOf("toggle-profile")===-1)
+            this.setState({showProfile:false});
     };
     render() {
 
@@ -25,17 +26,23 @@ export class HeaderUltils extends React.Component {
                     <div className="col-3 p-0 notification">
                         <img src="/image/002-notification.png" alt="Notification"/>
                     </div>
-                        <div className="col-3 p-0 profile"
-                             id="toggle-profile"
+                        <div className="col-3 p-0 profile toggle-profile"
+                             onClick={()=>{
+                                 console.log("sth");
+                                 this.setState({showProfile:!showProfile})
+                             }}
                         >
-                            <img src="/image/001-avatar.png" alt="Your profile"/>
+                            <img src="/image/001-avatar.png"
+                                 alt="Your profile"
+                                 className="toggle-profile"
+                            />
                             <TransitionGroup>
                                 {showProfile &&
                                 <Slide
                                     className="pv-slide"
                                     timeout={300}
                                 >
-                                    <ClickOutside onClickout={()=>this.handleClickOut()}>
+                                    <ClickOutside onClickout={(eClass)=>this.handleClickOut(eClass)}>
                                         <ProfileView/>
                                     </ClickOutside>
                                 </Slide>

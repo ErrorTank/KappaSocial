@@ -25,7 +25,7 @@ export class ClickOutside extends React.Component {
         let clickFunc = (e) => {
             let elem = ReactDOM.findDOMNode(this);
             if(!elem || !elem.contains(e.target)) {
-                this.props.onClickout();
+                this.props.onClickout($(e.target).attr("class"));
             }
         };
         window.addEventListener('click', clickFunc);
