@@ -8,9 +8,7 @@ const Slide = ({children,className,timeout,...props}) => {
             timeout={timeout}
             classNames={className}
         >
-            <div>
-                {children}
-            </div>
+            {children}
         </CSSTransition>
     );
 };

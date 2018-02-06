@@ -1,5 +1,5 @@
-import React, {Fragment} from "react";
-import {NewFeedLayout} from "../layout/home-layout/home-layout";
+import React from "react";
+import {NewFeedLayout} from "../layout/new-feed-layout/new-feed-layout";
 
 export class NewFeedRoute extends React.Component{
     constructor(props){
@@ -10,9 +10,9 @@ export class NewFeedRoute extends React.Component{
     render(){
         return(
             <NewFeedLayout>
-                <Fragment>
-                    
-                </Fragment>
+                <div className="">
+
+                </div>
             </NewFeedLayout>
         );
     }

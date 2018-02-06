@@ -1,0 +1,50 @@
+.search-bar{
+  .user-search{
+    position relative
+    input{
+      border 1px solid #c9c9c9
+      border-radius 3px
+      padding 5px 0
+      padding-left 30px
+      padding-right 30px
+      color #1a1a1a
+      font-weight lighter !important
+      font-size sm
+      transition all 0.2s ease
+    }
+    input:focus{
+      outline none
+      border-color favor
+    }
+    span{
+      position absolute
+      top 50%
+      transform translateY(-50%)
+      z-index 1
+      font-weight lighter
+      font-size sm - 0.2rem
+      color favor !important
+      cursor pointer
+    }
+    .search-icon{
+      left 6px
+    }
+    .undo-icon{
+      right 6px
+    }
+    .loading-icon{
+      right 6px
+      i{
+        animation spinner 0.8s linear infinite
+      }
+    }
+  }
+}
+@keyframes spinner{
+  from{
+    transform rotateZ(0)
+  }
+  to{
+    transform rotateZ(360deg)
+  }
+}

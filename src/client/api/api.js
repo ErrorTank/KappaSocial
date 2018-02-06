@@ -7,12 +7,14 @@ let request = (url, type, data) => new Promise((resolve, reject) => {
             xhr.setRequestHeader('Authorization', `Bearer ${localStorage.getItem("userToken")}`)
         },
         success: (data) => {
+            //res.json(data);
             resolve(data);
         },
         error: (err) => {
             reject(err);
         }
     };
+
 
     if (data) {
         ajaxConfig.data = JSON.stringify(data);

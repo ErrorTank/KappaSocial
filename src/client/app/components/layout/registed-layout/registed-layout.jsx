@@ -6,7 +6,7 @@ export class RegistedLayout extends React.Component{
         super(props);
         this.state={
         };
-        document.title="Kappa"
+        document.title="Kappa Login"
     };
     render(){
         let {children}=this.props;
