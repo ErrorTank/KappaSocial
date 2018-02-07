@@ -1,0 +1,45 @@
+.user-result{
+  padding 8px 0
+  border-bottom 1px solid grey
+  cursor pointer
+  .img-contain{
+    border 2px solid grey
+    position relative
+    overflow hidden
+    width 30px
+    height 30px
+    border-radius 50%
+    img{
+      width 33px
+      height 33px
+      top 50%
+      left 50%
+      position absolute
+      transform translate(-50%,-50%)
+    }
+  }
+
+    .result-name{
+      color #1a1a1a
+      font-size sm
+      overflow hidden
+
+    }
+    .r-ultils{
+      text-align center
+      font-size sm
+      .r-u-items{
+        transition all 0.1s linear
+      }
+      .add-friend{
+        color #cccccc
+      }
+      .add-friend:hover{
+        color darken(#cccccc,30%)
+      }
+    }
+
+}
+.user-result:hover{
+  background-color #f9f9f9
+}

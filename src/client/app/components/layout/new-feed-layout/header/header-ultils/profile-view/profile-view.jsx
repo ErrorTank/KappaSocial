@@ -1,5 +1,4 @@
 import React from "react";
-import ReactDOM from "react-dom";
 import {userServices} from "../../../../../../services/user-info";
 
 
@@ -11,7 +10,8 @@ export class ProfileView extends React.Component {
     };
 
     render() {
-        let {name}=userServices.getInfo();
+        let {name,avatarURL}=userServices.getInfo();
+        if(!avatarURL) avatarURL="/image/user.png";
         return (
 
             <div className="profile-view"
@@ -20,12 +20,12 @@ export class ProfileView extends React.Component {
                 <div className="avatar">
                     <div className="img-contain-circle">
                         <img
-                            src="/image/user.png"
+                            src={avatarURL}
                             ref={ava => this.userAvar = ava}
                         />
                     </div>
                 </div>
-                <p className="user-name">dasdasdada</p>
+                <p className="user-name">{name}</p>
                 <div className="profile-view-ultils">
                     <div className="pv-option row">
                         <span className="pv-icon col-3 p-0">

@@ -11,10 +11,10 @@ module.exports=(app,db)=>{
             if(!result.length){
                 db.query(createUser,(err)=>{
                     if (err) throw err;
-                    jwtAuth.signToken({id}).then((token)=>res.json({token}));
+                    jwtAuth.signToken({id,email}).then((token)=>res.json({token}));
                 });
             }else{
-                jwtAuth.signToken({id}).then((token)=>res.json({token}));
+                jwtAuth.signToken({id,email}).then((token)=>res.json({token}));
             }
         });
 
@@ -53,11 +53,41 @@ module.exports=(app,db)=>{
                     if(!result.length){
                         res.json({msg:"Wrong pass"});
                     }else{
-                        jwtAuth.signToken({email}).then((token)=>res.json({token}));
+                        jwtAuth.signToken({email}).then((token)=>res.json({token,result}));
                     }
                 });
             }
         });
 
-    })
+    });
+    app.get("/api/user/all",jwtAuth.authorPlayer,(req,res)=>{
+        let {id,email} =req.parseUser;
+        let keyword=req.query.keyword;
+        let getRegUsers=`SELECT name,email,avatarURL FROM users ${!id ? `Where email != '${email}' AND name Like '${keyword}'` : ""}`;
+        let getFbUsers=`SELECT name,email,avatarURL FROM fbUsers ${id ? `Where userID != '${id}' AND name Like '${keyword}'` : ""}`;
+        db.query(getFbUsers, (err,result1) => {
+            if (err) throw err;
+            db.query(getRegUsers,(err,result2)=>{
+                if (err) throw err;
+                let result=[...result1,...result2];
+                res.json(result);
+            });
+        });
+    });
+    // app.get("/api/user/reg/all/:id",(req,res)=>{
+    //     let email=req.params.id;
+    //     let getRegUsers=`SELECT name,email,avatarURL FROM users Where email!='${email}'`;
+    //     db.query(getRegUsers, (err,result) => {
+    //         if (err) throw err;
+    //         res.json(result);
+    //     });
+    // });
+    // app.get("/api/user/fb/all/:id",(req,res)=>{
+    //     let fbID=req.params.id;
+    //     let getFBUsers=`SELECT name,email,avatarURL FROM fbusers Where userID!='${fbID}'`;
+    //     db.query(getFBUsers, (err,result) => {
+    //         if (err) throw err;
+    //         res.json(result);
+    //     });
+    // });
 };

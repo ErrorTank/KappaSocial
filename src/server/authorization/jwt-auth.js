@@ -10,6 +10,7 @@ module.exports={
             jwt.verify(token,keys.jwt.clientSecret,(err,decoded)=>{
                 if(err) res.sendStatus(403);
                 else{
+                    req.parseUser=decoded;
                     next();
                 }
             });

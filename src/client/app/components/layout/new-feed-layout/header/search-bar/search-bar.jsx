@@ -1,26 +1,45 @@
 import React from "react";
+import {debounce} from "../../../../../../../utils/components-utils";
+import {SearchResult} from "./search-result/search-result";
+import {userApi} from "../../../../../../api/ultils-api/user-api";
 
 export class SearchBar extends React.Component {
     constructor(props) {
         super(props);
         this.state = {
-            content: "",
-            showLoading:false
+            keyword: "",
+            showLoading:false,
+            rList:[],
+            isFocus:true
         };
     };
 
+    showResult= debounce((val)=>{
+        userApi.searchUser(val).then((data)=>{
+            this.setState({showLoading:false,rList:data});
+        });
+
+    }, 1000);
+
+    searchingUser=(val)=>{
+        this.setState({keyword:val},()=>{
+            val && this.showResult(val);
+        });
+
+    };
+
     render() {
-        let {content,showLoading} = this.state;
-        let showUndo=!!content;
+        let {keyword,showLoading,rList,isFocus} = this.state;
+        let showUndo = !!keyword && !showLoading;
         return (
-            <div className="search-bar col p-0 align-items-center justify-content-center row">
+            <div className="search-bar col p-0 align-items-center justify-keyword-center row">
                 <div className="user-search col-8 p-0 row">
                     <span className="search-icon">
                         <i className="fas fa-search"/>
                     </span>
                     {showUndo &&
                         <span className="undo-icon"
-                              onClick={()=>this.setState({content:""},()=>{
+                              onClick={()=>this.setState({keyword:""},()=>{
                                   this.searchBar.focus();
                               })}
                         >
@@ -35,11 +54,18 @@ export class SearchBar extends React.Component {
                     <input type="text"
                            className="search col-12"
                            placeholder="Search kappas"
-                           value={content}
-                           onChange={(e) => this.setState({content: e.target.value})}
-                           ref={search=>this.searchBar=search}
+                           value={keyword}
+                           onChange={(e) => {this.setState({showLoading:true}); this.searchingUser(e.target.value)}}
+                           onBlur={()=>this.setState({isFocus:false})}
+                           onFocus={()=>this.setState({isFocus:true})}
+                           ref={sb=>this.searchBar=sb}
                     />
+
+
                 </div>
+                {(keyword && isFocus) && <SearchResult
+                    keyword={keyword}
+                    rList={rList}/>}
             </div>
         );
     }

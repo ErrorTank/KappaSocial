@@ -10,7 +10,7 @@ export class NewFeedRoute extends React.Component{
     render(){
         return(
             <NewFeedLayout>
-                <div className="">
+                <div className="new-feed-route">
 
                 </div>
             </NewFeedLayout>

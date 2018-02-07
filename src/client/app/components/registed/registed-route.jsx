@@ -25,7 +25,7 @@ export class RegistedRoute extends React.Component {
                     let avatarURL = `https://graph.facebook.com/${id}/picture?type=large&w‌​idth=480&height=480`;
                     let player = {id, name, avatarURL, email};
                     userServices.loginByFB(player).then(() => {
-                        customHistory.push("/home");
+                        customHistory.push("/");
                     });
                 }
             });

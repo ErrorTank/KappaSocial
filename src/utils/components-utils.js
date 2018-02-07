@@ -1,21 +1,20 @@
-const debounce=(fn1,fn2,delay)=>{
-    let action;
-    return (arg)=>{
-        fn1(arg);
-        clearTimeout(action);
-        action=setTimeout(()=>{
-            fn2(arg);
-        },delay)
-    }
-};
-const debounce2=(fn,delay)=>{
+import React from "react";
+
+const debounce=(fn,delay)=>{
     let action;
     return (arg)=>{
         clearTimeout(action);
         action=setTimeout(()=>{
+
             fn(arg);
         },delay)
     }
+};
+let highLight = (keyword, name) => {
+    let start=name.toLowerCase().indexOf(keyword.toLowerCase());
+    let end=start+keyword.length;
+    let p1=name.slice(0,start),p2=name.slice(start,end),p3=name.slice(end,keyword.length);
+    return (<span>{p1}<span className="h-light">{p2}</span>{p3}</span>)
 };
 const scrollToForm = (element,state) => {
     if (state) {
@@ -46,8 +45,8 @@ const animateCount=(count,fn)=>{
 };
 export{
     debounce,
-    debounce2,
     scrollToForm,
     ifFocusOutElement,
-    animateCount
+    animateCount,
+    highLight
 }
