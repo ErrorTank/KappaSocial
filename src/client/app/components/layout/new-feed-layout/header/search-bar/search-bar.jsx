@@ -2,6 +2,7 @@ import React from "react";
 import {debounce} from "../../../../../../../utils/components-utils";
 import {SearchResult} from "./search-result/search-result";
 import {userApi} from "../../../../../../api/ultils-api/user-api";
+import {userServices} from "../../../../../services/user-info";
 
 export class SearchBar extends React.Component {
     constructor(props) {
@@ -9,27 +10,32 @@ export class SearchBar extends React.Component {
         this.state = {
             keyword: "",
             showLoading:false,
-            rList:[],
+            follow:[],
+            unfollow:[],
             isFocus:true
         };
     };
 
     showResult= debounce((val)=>{
-        userApi.searchUser(val).then((data)=>{
-            this.setState({showLoading:false,rList:data});
+        let {id,email}=userServices.getInfo();
+        let key=id || email;
+        userApi.searchUser(val,key).then((data)=>{
+            console.log(data);
+            let {follow,unfollow}=data;
+            this.setState({showLoading:false,follow,unfollow});
         });
 
     }, 1000);
 
     searchingUser=(val)=>{
         this.setState({keyword:val},()=>{
-            val && this.showResult(val);
+            val ? this.showResult(val) : this.setState({showLoading:false});
         });
 
     };
 
     render() {
-        let {keyword,showLoading,rList,isFocus} = this.state;
+        let {keyword,showLoading,follow,unfollow,isFocus} = this.state;
         let showUndo = !!keyword && !showLoading;
         return (
             <div className="search-bar col p-0 align-items-center justify-keyword-center row">
@@ -63,9 +69,12 @@ export class SearchBar extends React.Component {
 
 
                 </div>
-                {(keyword && isFocus) && <SearchResult
+                {(keyword && isFocus) &&
+                <SearchResult
                     keyword={keyword}
-                    rList={rList}/>}
+                    follow={follow}
+                    unfollow={unfollow}
+                />}
             </div>
         );
     }

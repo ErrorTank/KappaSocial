@@ -10,8 +10,8 @@
     height 30px
     border-radius 50%
     img{
-      width 33px
-      height 33px
+      width 31px
+      height 31px
       top 50%
       left 50%
       position absolute
@@ -28,7 +28,16 @@
     .r-ultils{
       text-align center
       font-size sm
+      position relative
+      .followed-notice{
+        color #afafaf
+        font-size sm - 0.5rem
+      }
       .r-u-items{
+        position absolute
+        top 50%
+        left 50%
+        transform translate(-50%,-50%)
         transition all 0.1s linear
       }
       .add-friend{

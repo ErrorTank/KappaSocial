@@ -15,8 +15,11 @@ export const userApi = {
     getAllUser:()=>{
         return api.get(`/api/user/all`)
     },
-    searchUser: (keyword) => {
-        return api.get(`/api/user/all?keyword=${keyword}`)
+    searchUser: (keyword,key) => {
+        return api.get(`/api/user/all?keyword=${keyword}&key=${key}`)
+    },
+    followUser:(guess,me)=>{
+        return api.post("/api/user/follow",{guess,me})
     }
 };
 

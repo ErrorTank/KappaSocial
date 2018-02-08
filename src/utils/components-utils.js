@@ -10,11 +10,25 @@ const debounce=(fn,delay)=>{
         },delay)
     }
 };
+
 let highLight = (keyword, name) => {
-    let start=name.toLowerCase().indexOf(keyword.toLowerCase());
-    let end=start+keyword.length;
-    let p1=name.slice(0,start),p2=name.slice(start,end),p3=name.slice(end,keyword.length);
-    return (<span>{p1}<span className="h-light">{p2}</span>{p3}</span>)
+    let ranges=[];
+    let recursionHLight=(k,n)=>{
+
+        let ck=k.toLowerCase();
+        let cn=n.toLowerCase();
+        let start=cn.indexOf(ck);
+        if(start===-1){
+            ranges.push((<span>{n.slice(0,n.length)}</span>));
+            return;
+        }
+        let end=start+k.length-1;
+        ranges.push((<span>{n.slice(0,start)}<span className="h-light">{n.slice(start,end+1)}</span></span>));
+        n=n.slice(end+1,n.length);
+        recursionHLight(k,n);
+    };
+    recursionHLight(keyword,name);
+    return (<span>{ranges.map((elem,i)=><span key={i}>{elem}</span>)}</span>)
 };
 const scrollToForm = (element,state) => {
     if (state) {

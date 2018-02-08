@@ -7,10 +7,14 @@ export class SearchResult extends React.Component {
     };
 
     render() {
-        let {rList, keyword} = this.props;
+        let {follow,unfollow, keyword} = this.props;
+        let length=follow.length+unfollow.length;
+        follow.forEach((u)=>u.followed=true);
+        unfollow.forEach((u)=>u.followed=false);
+        let rList=[...follow,...unfollow];
         return (
             <div className="search-result">
-                {rList.length ?
+                {length ?
                     rList.map((user, i) => (
                     <Result
                         keyword={keyword}

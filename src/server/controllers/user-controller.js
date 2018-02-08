@@ -63,16 +63,48 @@ module.exports=(app,db)=>{
     app.get("/api/user/all",jwtAuth.authorPlayer,(req,res)=>{
         let {id,email} =req.parseUser;
         let keyword=req.query.keyword;
-        let getRegUsers=`SELECT name,email,avatarURL FROM users ${!id ? `Where email != '${email}' AND name Like '${keyword}'` : ""}`;
-        let getFbUsers=`SELECT name,email,avatarURL FROM fbUsers ${id ? `Where userID != '${id}' AND name Like '${keyword}'` : ""}`;
-        db.query(getFbUsers, (err,result1) => {
+        let myKey=req.query.key;
+        let getFBFollow,getRegFollow,getFBUnFollow,getRegUnFollow;
+        if(id){
+            getFBFollow=`SELECT userID,name,email,avatarURL FROM fbusers Where userID != '${id}' AND name Like '%${keyword}%' AND userID in (SELECT userID FROM followers where followerID = '${myKey}')`;
+            getRegFollow`SELECT name,email,avatarURL FROM users Where name Like '%${keyword}%'  AND email in (SELECT email FROM followers where followerID = '${myKey}')`;
+            getFBUnFollow=`SELECT userID,name,email,avatarURL FROM fbusers Where userID != '${id}' AND name Like '%${keyword}%' AND userID not in (SELECT userID FROM followers where followerID = '${myKey}')`;
+            getRegUnFollow`SELECT name,email,avatarURL FROM users Where name Like '%${keyword}%'  AND email not in (SELECT email FROM followers where followerID = '${myKey}')`;
+        }else{
+            getFBFollow=`SELECT userID,name,email,avatarURL FROM fbusers Where name Like '%${keyword}%' AND userID in (SELECT userID FROM followers where followerEmail = '${myKey}')`;
+            getRegFollow=`SELECT name,email,avatarURL FROM users Where email != '${email}' AND name Like '%${keyword}%' AND email in (SELECT email FROM followers where followerEmail = '${myKey}')`;
+            getFBUnFollow=`SELECT userID,name,email,avatarURL FROM fbusers Where name Like '%${keyword}%' AND userID not in (SELECT userID FROM followers where followerEmail = '${myKey}')`;
+            getRegUnFollow=`SELECT name,email,avatarURL FROM users Where email != '${email}' AND name Like '%${keyword}%' AND email not in (SELECT email FROM followers where followerEmail = '${myKey}')`;
+        }
+
+        db.query(getFBFollow, (err,result1) => {
             if (err) throw err;
-            db.query(getRegUsers,(err,result2)=>{
-                if (err) throw err;
-                let result=[...result1,...result2];
-                res.json(result);
+            db.query(getRegFollow,(err,result2)=>{
+                if(err) throw err;
+                db.query(getFBUnFollow,(err,result3)=>{
+                    if(err) throw err;
+                    db.query(getRegUnFollow,(err,result4)=>{
+                        if(err) throw err;
+                        let follow=[...result1,...result2];
+                        let unfollow=[...result3,...result4];
+                        res.json({follow,unfollow});
+                    });
+                });
             });
         });
+    });
+    app.post("/api/user/follow",(req,res)=>{
+        let {myEmail,myID}=req.body.me;
+        let {email,id}=req.body.guess;
+        myEmail = myID ? myEmail : null;
+        email = id ? email : null;
+        console.log(email,myEmail);
+        let addFollower=`INSERT INTO followers (email,userID,followerEmail,followerID) VALUES('${email}','${id}','${myEmail}','${myID}')`;
+        db.query(addFollower,(err)=>{
+            if (err) throw err;
+            res.end();
+        });
+
     });
     // app.get("/api/user/reg/all/:id",(req,res)=>{
     //     let email=req.params.id;

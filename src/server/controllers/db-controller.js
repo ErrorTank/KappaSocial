@@ -13,4 +13,11 @@ module.exports=(app,db)=>{
             res.send("Create users complete");
         });
     });
+    app.get("/api/db/create/followers",(req,res)=>{
+        let sql="CREATE TABLE followers (email NVARCHAR(50),userID VARCHAR(50),followerID VARCHAR(50),followerEmail VARCHAR(50),FOREIGN KEY (email) REFERENCES users(email),FOREIGN KEY (userID) REFERENCES fbusers(userID))";
+        db.query(sql,(err)=>{
+            if (err) throw err;
+            res.send("Create users complete");
+        });
+    });
 };
