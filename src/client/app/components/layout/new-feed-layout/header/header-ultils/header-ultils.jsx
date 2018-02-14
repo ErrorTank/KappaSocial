@@ -24,7 +24,7 @@ export class HeaderUltils extends React.Component {
             <div className="header-ultils col p-0 row">
                 <div className="header-ultils-wrapper col justify-content-end row">
                     <div className="col-3 p-0 notification">
-                        <img src="/image/002-notification.png" alt="Notification"/>
+                        <img src="/image/002-notification.png" alt="Notification" className="toggle-noti"/>
                     </div>
                         <div className="col-3 p-0 profile toggle-profile"
                              onClick={()=>{

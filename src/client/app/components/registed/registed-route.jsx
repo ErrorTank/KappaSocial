@@ -64,7 +64,7 @@ export class RegistedRoute extends React.Component {
                     <div className={`${currentForm==="login" ? "login-form-wrapper" : "signup-form-wrapper"}`}>
                         <TransitionGroup>
                             <Fade key={currentForm}
-                                  timeout={300}
+                                  timeout={2000}
                                   className="form-fade"
 
                             >

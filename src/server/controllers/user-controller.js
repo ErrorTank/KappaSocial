@@ -95,11 +95,12 @@ module.exports=(app,db)=>{
     });
     app.post("/api/user/follow",(req,res)=>{
         let {myEmail,myID}=req.body.me;
-        let {email,id}=req.body.guess;
-        myEmail = myID ? myEmail : null;
-        email = id ? email : null;
-        console.log(email,myEmail);
-        let addFollower=`INSERT INTO followers (email,userID,followerEmail,followerID) VALUES('${email}','${id}','${myEmail}','${myID}')`;
+        let {email,userID}=req.body.guess;
+
+        myEmail = !myID ? myEmail : null;
+        email = !userID ? email : null;
+
+        let addFollower=`INSERT INTO followers (email,userID,followerEmail,followerID) VALUES('${email}','${userID}','${myEmail}','${myID}')`;
         db.query(addFollower,(err)=>{
             if (err) throw err;
             res.end();

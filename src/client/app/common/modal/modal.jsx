@@ -22,20 +22,20 @@ export class Modal extends React.Component {
 
         return (
             <div className={className}>
-                <div className="modal">
+                <div className="my-modal">
                     <div
                         className="modal-overlay"
                         onMouseDown={(e) => e.target === this.overlayElem && onDismiss()}
                         ref={(elem) => this.overlayElem = elem}
                     >
                         <div className="modal-box">
-                            <div className="btn-close"
-                                 onClick={() => onDismiss()}
-                            >
-                                <div className="close-x">
-                                    &times;
-                                </div>
-                            </div>
+                            {/*<div className="btn-close"*/}
+                                 {/*onClick={() => onDismiss()}*/}
+                            {/*>*/}
+                                {/*<div className="close-x">*/}
+                                    {/*&times;*/}
+                                {/*</div>*/}
+                            {/*</div>*/}
 
                             { content }
                         </div>

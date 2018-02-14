@@ -5,6 +5,7 @@ import {RegistedRoute} from "./components/registed/registed-route";
 import {NewFeedRoute} from "./components/new-feed/new-feed-route";
 import {Fade} from "./common/animation/fade";
 import {TransitionGroup} from "react-transition-group";
+import {ModalsRegistry} from "./common/modal/modals";
 
 export const customHistory = createBrowserHistory();
 
@@ -13,7 +14,7 @@ const FadeRoute=({path,component:Comp,...rest})=>{
         <TransitionGroup>
             <Fade
                 key={path}
-                timeout={300}
+                timeout={1000}
                 className="main-route-fade"
             >
                 <Route
@@ -27,16 +28,20 @@ const FadeRoute=({path,component:Comp,...rest})=>{
 };
 
 export class MainRoutes extends React.Component{
+    componentWillMount(){
+      this.props.redirect();
+    };
     render(){
         return(
             <div>
+                <ModalsRegistry/>
                 <Router history={customHistory}>
                     <Switch>
                         <FadeRoute path="/" component={NewFeedRoute} exact/>
                         <FadeRoute path="/login" component={RegistedRoute}/>
                     </Switch>
                 </Router>
-                {/*<ModalRegistry/>*/}
+
             </div>
         );
     }

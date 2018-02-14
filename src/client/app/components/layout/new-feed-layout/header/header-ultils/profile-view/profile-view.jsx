@@ -1,6 +1,6 @@
 import React from "react";
 import {userServices} from "../../../../../../services/user-info";
-
+import {Avatar} from "../../../../../../common/avatar/avatar";
 
 export class ProfileView extends React.Component {
     constructor(props) {
@@ -18,12 +18,9 @@ export class ProfileView extends React.Component {
                  onClick={(e) => e.stopPropagation()}
             >
                 <div className="avatar">
-                    <div className="img-contain-circle">
-                        <img
-                            src={avatarURL}
-                            ref={ava => this.userAvar = ava}
-                        />
-                    </div>
+                    <Avatar avatarURL={avatarURL}
+                            size="lg"
+                    />
                 </div>
                 <p className="user-name">{name}</p>
                 <div className="profile-view-ultils">

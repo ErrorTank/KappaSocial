@@ -1,13 +1,14 @@
 import React from "react";
+import {Modal} from "./modal";
 import {TransitionGroup} from "react-transition-group";
-import _ from "lodash";
 import {Fade} from "../animation/fade";
+import _ from "lodash";
 
-export class ModalRegistry extends React.Component{
-    constructor(props){
+export class ModalsRegistry extends React.Component {
+    constructor(props) {
         super(props);
-        this.state={
-            modalList:[]
+        this.state = {
+            modalList: []
         };
 
         modals.openModal = (options) => {
@@ -16,13 +17,15 @@ export class ModalRegistry extends React.Component{
                 resolve: null
             };
 
-            this.state.modalList.push(modalOptions);
-            this.forceUpdate();
-            let result = new Promise((resolve)=> {
+            let {modalList}=this.state;
+            this.setState({
+                modalList:modalList.concat([modalOptions])
+            });
+            let result = new Promise((resolve) => {
                 modalOptions.resolve = resolve;
             });
             return {
-                dismiss: ()=> {
+                dismiss: () => {
                     this.dismiss(modalOptions);
                 },
                 close: (result) => {
@@ -31,41 +34,41 @@ export class ModalRegistry extends React.Component{
                 result: result
             };
         };
-    };
+    }
 
     dismiss(modal) {
         _.remove(this.state.modalList, modal);
+        console.log(modal.resolve)
         modal.resolve();
         this.forceUpdate();
     }
 
     close(modal, result) {
         _.remove(this.state.modalList, modal);
+        console.log(modal.resolve);
         modal.resolve(result);
         this.forceUpdate();
     }
 
-
-    render(){
+    render() {
         const {modalList} = this.state;
 
 
         return (
             <TransitionGroup className="modal-list">
-                { modalList.map((modal, i)=> (
-                    <Fade key={i} timeout={300} className="modal-fade">
-                        <Modal
-                            isStack={modalList.length > 1}
-                            className={modal.options.className}
-                            content={modal.options.content}
-                            onDismiss={() => this.dismiss(modal)}
+                {modalList.map((modal, i) => (
+                    <Fade key={i} timeout={300} className="modal-f">
+                        <Modal isStack={modalList.length > 1}
+                               className={modal.options.className}
+                               content={modal.options.content}
+                               onDismiss={() => this.dismiss(modal)}
                         />
                     </Fade>
 
-                )) }
+                ))}
             </TransitionGroup>
         );
     }
 }
 
-export const modals={};
+export const modals = {};
