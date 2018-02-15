@@ -50,7 +50,7 @@ export class PostStuff extends React.Component {
 
                         >
                             {postType}
-                        </Fade>)
+                        </Fade>
                     </TransitionGroup>
                 </div>
 
