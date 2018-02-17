@@ -7,8 +7,9 @@ export class PostImage extends React.Component{
         this.state={
         };
     };
+
     render(){
-        let {list}=this.props;
+        let {list,loadImage}=this.props;
         let allowAdd=list.length<4;
         let eachImgHeight=`${$(".each-img").width()}px`;
         let imgHolderHeight=`${$(".img-holder").width()}px`;
@@ -24,10 +25,21 @@ export class PostImage extends React.Component{
                     )}
                     {allowAdd &&
                     <div className="img-holder p-0 col-3" style={{height:imgHolderHeight}}>
-                        <div className="inside-img-holder">
+                        <div className="inside-img-holder"
+                             onClick={()=>{
+                                 this.upload.click();
+                             }}
+                        >
                             <span className="icon-container-middle add-img-icon">
                                 <i className="fas fa-plus"/>
                             </span>
+                            <input type="file"
+                                   className="img-upload"
+                                   accept=".jpg, .jpeg"
+                                   ref={upload=>this.upload=upload}
+                                   onChange={(e)=>loadImage(e.target.files)}
+                            />
+
                         </div>
                     </div>}
                 </div>

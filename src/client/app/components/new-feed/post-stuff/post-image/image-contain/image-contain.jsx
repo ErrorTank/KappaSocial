@@ -7,9 +7,10 @@ export class ImgContain extends React.Component{
         };
     };
     render(){
+        let {url}=this.props;
         return(
             <div className="img-contain">
-
+                <img src={url}/>
             </div>
         );
     }

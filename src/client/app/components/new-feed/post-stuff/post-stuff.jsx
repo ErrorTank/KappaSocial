@@ -15,9 +15,21 @@ export class PostStuff extends React.Component {
             imgList:[]
         }
     };
+    loadImage=(files)=>{
 
+        if(FileReader && files && files.length){
+            let fr=new FileReader();
+            fr.onload =  ()=> {
+                let current=this.state.imgList;
+                this.setState({imgList:current.concat([fr.result])});
+            };
+            fr.readAsDataURL(files[0]);
+        }
+    };
     render() {
+
         let {value,type,imgList} = this.state;
+        console.log(imgList);
         let {expand,expandPost,close}=this.props;
         let postType=type==="article"?
             (
@@ -31,6 +43,7 @@ export class PostStuff extends React.Component {
             (
                 <PostImage
                     list={imgList}
+                    loadImage={(files)=>this.loadImage(files)}
                 />
             );
         return (
