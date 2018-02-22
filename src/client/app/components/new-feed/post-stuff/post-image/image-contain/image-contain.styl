@@ -5,11 +5,36 @@
   border-radius 3px
   overflow hidden
   position relative
+  .loading-bar{
+    margin-top 30px
+    padding 0 10px
+  }
   img{
     position absolute
     top 50%
     left 50%
     transform translate(-50%,-50%)
     width  105% !important
+    z-index 1
+  }
+  .del-upload{
+    position: absolute;
+    z-index 2
+    top 0
+    right 2px
+    color #c4c4c4
+    font-size sm
+    cursor pointer
+    opacity 0
+    transition all 0.1s ease
+  }
+  .del-upload:hover{
+    color #969696
   }
 }
+.img-contain:hover{
+  .del-upload{
+    opacity 1
+  }
+}
+

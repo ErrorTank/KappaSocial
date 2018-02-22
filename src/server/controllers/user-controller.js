@@ -65,16 +65,19 @@ module.exports=(app,db)=>{
         let keyword=req.query.keyword;
         let myKey=req.query.key;
         let getFBFollow,getRegFollow,getFBUnFollow,getRegUnFollow;
-        if(id){
-            getFBFollow=`SELECT userID,name,email,avatarURL FROM fbusers Where userID != '${id}' AND name Like '%${keyword}%' AND userID in (SELECT userID FROM followers where followerID = '${myKey}')`;
-            getRegFollow`SELECT name,email,avatarURL FROM users Where name Like '%${keyword}%'  AND email in (SELECT email FROM followers where followerID = '${myKey}')`;
-            getFBUnFollow=`SELECT userID,name,email,avatarURL FROM fbusers Where userID != '${id}' AND name Like '%${keyword}%' AND userID not in (SELECT userID FROM followers where followerID = '${myKey}')`;
-            getRegUnFollow`SELECT name,email,avatarURL FROM users Where name Like '%${keyword}%'  AND email not in (SELECT email FROM followers where followerID = '${myKey}')`;
-        }else{
+
+
+
             getFBFollow=`SELECT userID,name,email,avatarURL FROM fbusers Where name Like '%${keyword}%' AND userID in (SELECT userID FROM followers where followerEmail = '${myKey}')`;
             getRegFollow=`SELECT name,email,avatarURL FROM users Where email != '${email}' AND name Like '%${keyword}%' AND email in (SELECT email FROM followers where followerEmail = '${myKey}')`;
             getFBUnFollow=`SELECT userID,name,email,avatarURL FROM fbusers Where name Like '%${keyword}%' AND userID not in (SELECT userID FROM followers where followerEmail = '${myKey}')`;
             getRegUnFollow=`SELECT name,email,avatarURL FROM users Where email != '${email}' AND name Like '%${keyword}%' AND email not in (SELECT email FROM followers where followerEmail = '${myKey}')`;
+
+        if(id){
+            getFBFollow=`SELECT userID,name,email,avatarURL FROM fbusers Where userID != '${id}' AND name Like '%${keyword}%' AND userID in (SELECT userID FROM followers where followerID = '${myKey}')`;
+            getRegFollow=`SELECT name,email,avatarURL FROM users Where name Like '%${keyword}%'  AND email in (SELECT email FROM followers where followerID = '${myKey}')`;
+            getFBUnFollow=`SELECT userID,name,email,avatarURL FROM fbusers Where userID != '${id}' AND name Like '%${keyword}%' AND userID not in (SELECT userID FROM followers where followerID = '${myKey}')`;
+            getRegUnFollow=`SELECT name,email,avatarURL FROM users Where name Like '%${keyword}%'  AND email not in (SELECT email FROM followers where followerID = '${myKey}')`;
         }
 
         db.query(getFBFollow, (err,result1) => {

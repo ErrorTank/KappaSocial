@@ -20,4 +20,18 @@ module.exports=(app,db)=>{
             res.send("Create users complete");
         });
     });
+    app.get("/api/db/create/post",(req,res)=> {
+        let sql = "CREATE TABLE posts (email NVARCHAR(50) , userID NVARCHAR(20), content NVARCHAR(200),time VARCHAR(20) Primary key)";
+        db.query(sql, (err) => {
+            if (err) throw err;
+            res.send("Create posts complete");
+        });
+    });
+    app.get("/api/db/create/post/img",(req,res)=>{
+        let sql = "CREATE TABLE imgPost (imgID int NOT NULL AUTO_INCREMENT Primary key, time VARCHAR(20), imgURL VARCHAR(100))";
+        db.query(sql, (err) => {
+            if (err) throw err;
+            res.send("Create img post complete");
+        });
+    });
 };

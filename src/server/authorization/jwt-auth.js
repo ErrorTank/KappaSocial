@@ -29,5 +29,15 @@ module.exports={
             if(err) reject(err);
             resolve(decoded);
         });
-    })
+    }),
+    parseToken:(req,res,next)=>{
+        req.getData=new Promise((resolve,reject)=>{
+            jwt.verify(req.headers["authorization"].split(" ")[1],keys.jwt.clientSecret,(err,decoded)=>{
+                if(err) reject(err);
+                resolve(decoded);
+
+            })
+        });
+        next();
+    }
 };

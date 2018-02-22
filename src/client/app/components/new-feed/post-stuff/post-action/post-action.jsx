@@ -18,8 +18,14 @@ export class PostAction extends React.Component{
                         Cancel
                     </button>
                 </div>
+
                 <div className="col-3">
-                    <button className="btn btn-block post-article">Post</button>
+                    <button className="btn btn-block post-article"
+                            type="submit"
+                            form="upload-post"
+                    >
+                        Post
+                    </button>
                 </div>
             </div>
         );

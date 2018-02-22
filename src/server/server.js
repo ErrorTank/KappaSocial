@@ -30,12 +30,6 @@ db.connect((err) => {
 });
 
 
-// const redirectRoute=(req,res,next)=>{
-//   console.log(req.baseURL);
-//   next();
-// };
-
-
 app.get(validRoutes, (req, res) => {
     console.log("valid");
     res.sendFile(path.resolve(__dirname, "../../public/index.html"));
@@ -49,4 +43,5 @@ const server = app.listen(port, () => {
 require("./sockets/socket")(server, app);
 require("./controllers/db-controller")(app, db);
 require("./controllers/user-controller")(app, db);
+require("./controllers/post-controllers")(app, db);
 

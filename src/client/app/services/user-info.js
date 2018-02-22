@@ -1,5 +1,7 @@
 import {userApi} from "../../api/ultils-api/user-api";
 
+let settingListener=[];
+
 let userInfo=()=>{
   let info=localStorage.getItem("userInfo");
   return info ? JSON.parse(info) : null;

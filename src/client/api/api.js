@@ -33,6 +33,28 @@ export const api = {
     },
     delete: (url) => {
         return request(url, "DELETE");
+    },
+    postMultipart: (url, data)=>{
+
+        return new Promise((resolve, reject) => {
+            let fd = new FormData();
+            fd.append('imageFile',data);
+            let xhr = new XMLHttpRequest();
+
+            xhr.open('post', url, true);
+            xhr.setRequestHeader("authorization", `Bearer ${localStorage.getItem("userToken")}`);
+
+            xhr.onload = function () {
+                if (this.status === 200) {
+                    resolve(this.response);
+                } else {
+                    reject(this.statusText);
+                }
+            };
+
+            xhr.send(fd);
+
+        });
     }
 };
 

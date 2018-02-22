@@ -5,66 +5,85 @@ import {PostArticle} from "./post-article/post-article";
 import {PostImage} from "./post-image/post-img";
 import {TransitionGroup} from "react-transition-group";
 import {Fade} from "../../../common/animation/fade";
+import {postApi} from "../../../../api/ultils-api/post-api";
+
 
 export class PostStuff extends React.Component {
     constructor(props) {
         super(props);
         this.state = {
             value: "",
-            type:"article",
-            imgList:[]
+            type: "article",
+            files: []
         }
     };
-    loadImage=(files)=>{
 
-        if(FileReader && files && files.length){
-            let fr=new FileReader();
-            fr.onload =  ()=> {
-                let current=this.state.imgList;
-                this.setState({imgList:current.concat([fr.result])});
-            };
-            fr.readAsDataURL(files[0]);
+
+    handleSubmit = () => {
+        let {files, value} = this.state;
+        let promise = [];
+        for (let i = 0; i < files.length; i++) {
+            promise.push(postApi.uploadPost(files[i]));
         }
+        Promise.all(promise).then((data) => {
+            postApi.savePost({imgData: data, value}).then(() => {
+                let {close} = this.props;
+                close();
+            });
+        });
     };
+
     render() {
 
-        let {value,type,imgList} = this.state;
-        console.log(imgList);
-        let {expand,expandPost,close}=this.props;
-        let postType=type==="article"?
+        let {value, type, files} = this.state;
+        console.log(files);
+
+        let {expand, expandPost, close} = this.props;
+        let postType = type === "article" ?
             (
                 <PostArticle
                     onChange={(val) => this.setState({value: val})}
                     value={value}
-                    expandPost={()=>expandPost()}
+                    expandPost={() => expandPost()}
                     expand={expand}
                 />
             ) :
             (
                 <PostImage
-                    list={imgList}
-                    loadImage={(files)=>this.loadImage(files)}
+                    files={files}
+                    onChange={(files) => this.setState({files})}
+
                 />
             );
         return (
             <div className="new-feed-block post-stuff">
                 {expand &&
 
-                    <PostNav
-                        current={type}
-                        onSwitch={(type)=>this.setState({type})}
-                    />
+                <PostNav
+                    current={type}
+                    onSwitch={(type) => this.setState({type})}
+                />
                 }
                 <div className="post-type">
-                    <TransitionGroup>
-                        <Fade key={type}
-                              timeout={200}
-                              className="post-type-fade"
+                    <form encType="multipart/form-data"
+                          id="upload-post"
+                          method="POST"
+                          onSubmit={(e) => {
+                              e.preventDefault();
+                              this.handleSubmit(e)
+                          }}
+                    >
+                        <TransitionGroup>
+                            <Fade key={type}
+                                  timeout={200}
+                                  className="post-type-fade"
 
-                        >
-                            {postType}
-                        </Fade>
-                    </TransitionGroup>
+                            >
+                                {postType}
+                            </Fade>
+                        </TransitionGroup>
+                    </form>
+
                 </div>
 
                 {expand &&
