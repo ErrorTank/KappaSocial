@@ -22,7 +22,7 @@ export class PostStuff extends React.Component {
 
     handleSubmit = () => {
         let {files, value} = this.state;
-        let {appendPost,close}=this.props;
+        let {onSubmit,close}=this.props;
         files=files.map((f)=>f.file);
         let promise = [];
         for (let i = 0; i < files.length; i++) {
@@ -32,7 +32,8 @@ export class PostStuff extends React.Component {
             let {name,avatarURL}=userServices.getInfo();
             let postObj={imgList: data, content:value,name,avatarURL,time:new Date().getTime()};
             postApi.savePost(postObj).then(() => {
-                close(postObj);
+                onSubmit(postObj);
+                close();
 
             });
         });
@@ -42,14 +43,12 @@ export class PostStuff extends React.Component {
 
         let {value, type, files} = this.state;
 
-        let {expand, expandPost, close} = this.props;
+        let {close} = this.props;
         let postType = type === "article" ?
             (
                 <PostArticle
                     onChange={(val) => this.setState({value: val})}
                     value={value}
-                    expandPost={() => expandPost()}
-                    expand={expand}
                 />
             ) :
             (
@@ -63,13 +62,12 @@ export class PostStuff extends React.Component {
             );
         return (
             <div className="new-feed-block post-stuff">
-                {expand &&
 
                 <PostNav
                     current={type}
                     onSwitch={(type) => this.setState({type})}
                 />
-                }
+
                 <div className="post-type">
                     <form encType="multipart/form-data"
                           id="upload-post"
@@ -91,12 +89,10 @@ export class PostStuff extends React.Component {
                     </form>
 
                 </div>
-
-                {expand &&
                 <PostAction
                     disabled={!value && !files.length}
                     close={close}
-                />}
+                />
             </div>
         );
     }

@@ -9,7 +9,7 @@ export class PostArticle extends React.Component{
     };
     render(){
         let {avatarURL} = userServices.getInfo();
-        let {onChange,value,expandPost,expand}=this.props;
+        let {onChange,value}=this.props;
         if(!avatarURL) avatarURL="/image/user.png";
         return(
             <div className="post-article row">
@@ -19,7 +19,7 @@ export class PostArticle extends React.Component{
                     />
                 </div>
 
-                <div onClick={}>
+                <div>
 
                 </div>
 
@@ -29,8 +29,7 @@ export class PostArticle extends React.Component{
                     placeholder="Post something..."
                     value={value}
                     onChange={e=>onChange(e.target.value)}
-                    onFocus={()=>!expand && expandPost()}
-                    autoFocus={expand}
+                    autoFocus={true}
                 />
             </div>
         );

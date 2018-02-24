@@ -6,6 +6,7 @@ import {UserPost} from "./user-post/user-post";
 import {postApi} from "../../../api/ultils-api/post-api";
 import {PostLoading} from "../../common/post-loading/post-loading";
 import {RefreshBtn} from "./refresh-btn/refresh-btn";
+import {TogglePostModal} from "./toggle-post-modal/toggle-post-modal";
 
 
 export class NewFeedRoute extends React.Component {
@@ -30,21 +31,21 @@ export class NewFeedRoute extends React.Component {
 
     };
 
-    appendPost=({img,sda})=>{
+    appendPost=(p)=>{
         let {posts}=this.state;
         this.setState({posts:posts.concat(p)});
     };
 
     openPostModal = () => {
+        this.setState({expand:true});
         const modal = modals.openModal({
             content: (
                 <PostStuff
-                    expand={expand}
                     close={(value) => {
 
                         modal.close(value);
                     }}
-                    expandPost={() => this.setState({expand: true})}
+                    onSubmit={(p)=>this.appendPost(p)}
                 />
             ),
             className: "what-ever"
@@ -66,9 +67,8 @@ export class NewFeedRoute extends React.Component {
 
                         </div>
                         {!expand && (
-                            <PostStuff
-                                expand={expand}
-                                expandPost={() => this.openPostModal().then((value) => {})}
+                            <TogglePostModal
+                                onClick={() => this.openPostModal().then((value) => {this.setState({expand:false})})}
                             />
                         )}
                         <RefreshBtn
