@@ -20,6 +20,9 @@ export const userApi = {
     },
     followUser:(guess,me)=>{
         return api.post("/api/user/follow",{guess,me})
+    },
+    getUserByKey:(key)=>{
+        return api.get(`/api/user?key=${key}`)
     }
 };
 

@@ -6,6 +6,7 @@ import {PostImage} from "./post-image/post-img";
 import {TransitionGroup} from "react-transition-group";
 import {Fade} from "../../../common/animation/fade";
 import {postApi} from "../../../../api/ultils-api/post-api";
+import {userServices} from "../../../services/user-info";
 
 
 export class PostStuff extends React.Component {
@@ -21,14 +22,18 @@ export class PostStuff extends React.Component {
 
     handleSubmit = () => {
         let {files, value} = this.state;
+        let {appendPost,close}=this.props;
+        files=files.map((f)=>f.file);
         let promise = [];
         for (let i = 0; i < files.length; i++) {
             promise.push(postApi.uploadPost(files[i]));
         }
         Promise.all(promise).then((data) => {
-            postApi.savePost({imgData: data, value}).then(() => {
-                let {close} = this.props;
-                close();
+            let {name,avatarURL}=userServices.getInfo();
+            let postObj={imgList: data, content:value,name,avatarURL,time:new Date().getTime()};
+            postApi.savePost(postObj).then(() => {
+                close(postObj);
+
             });
         });
     };
@@ -36,7 +41,6 @@ export class PostStuff extends React.Component {
     render() {
 
         let {value, type, files} = this.state;
-        console.log(files);
 
         let {expand, expandPost, close} = this.props;
         let postType = type === "article" ?
@@ -51,7 +55,9 @@ export class PostStuff extends React.Component {
             (
                 <PostImage
                     files={files}
-                    onChange={(files) => this.setState({files})}
+                    onChange={(files) => {
+                        this.setState({files})
+                    }}
 
                 />
             );
@@ -88,7 +94,7 @@ export class PostStuff extends React.Component {
 
                 {expand &&
                 <PostAction
-                    disabled={!value}
+                    disabled={!value && !files.length}
                     close={close}
                 />}
             </div>

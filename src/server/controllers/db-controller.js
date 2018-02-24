@@ -21,7 +21,7 @@ module.exports=(app,db)=>{
         });
     });
     app.get("/api/db/create/post",(req,res)=> {
-        let sql = "CREATE TABLE posts (email NVARCHAR(50) , userID NVARCHAR(20), content NVARCHAR(200),time VARCHAR(20) Primary key)";
+        let sql = "CREATE TABLE posts (email NVARCHAR(50) , userID NVARCHAR(20), content NVARCHAR(200),time VARCHAR(20) Primary key,name NVARCHAR(50),avatarURL VARCHAR(100))";
         db.query(sql, (err) => {
             if (err) throw err;
             res.send("Create posts complete");

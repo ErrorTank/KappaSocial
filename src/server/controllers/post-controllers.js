@@ -32,13 +32,12 @@ module.exports = (app, db) => {
     app.get("/api/get/posts", jwtAuth.parseToken ,async (req, res) => {
         let data=await req.getData;
         let getPost;
-        console.log(data);
         if (data.hasOwnProperty("id")){
             console.log("fb user");
             let {id} = data;
-            getPost=`SELECT content, imgURL, p.time
+            getPost=`SELECT content, imgURL, p.time, p.name, p.avatarURL
                     FROM posts p 
-                    INNER JOIN imgpost img on p.time = img.time
+                    INNER JOIN imgpost img on (p.time = img.time)
                     WHERE p.userID='${id}' 
                     or p.userID in (SELECT userID from followers where followerID ='${id}') 
                     or p.email in (SELECT email from followers where followerID ='${id}') 
@@ -46,12 +45,15 @@ module.exports = (app, db) => {
         }else{
             console.log("reg user");
             let {email}=data;
-            getPost=`SELECT content, imgURL, p.time
+            getPost=`
+                        
+                    SELECT content, imgURL, p.time, p.name, p.avatarURL
                     FROM posts p 
-                    INNER JOIN imgpost img on p.time = img.time
+                    INNER JOIN imgpost img on (p.time = img.time)
                     WHERE p.email='${email}' 
                     or p.userID in (SELECT userID from followers where followerEmail ='${email}') 
                     or p.email in (SELECT email from followers where followerEmail ='${email}')
+                  
                     `;
         }
         db.query(getPost,(err,result)=>{
@@ -59,34 +61,33 @@ module.exports = (app, db) => {
 
             let newResult=[],imgList=[];
             for(let i =0;i<result.length;i++){
-                let {time,content}=result[i];
+                let {time,content,name,avatarURL}=result[i];
                 imgList=result.filter((r)=>{
                     return time===r.time;
                 }).map((r)=>r.imgURL);
                 i+=imgList.length-1;
-                newResult.push({time,content,imgList});
+                newResult.push({time,content,imgList,name,avatarURL:avatarURL==="null" ? null : avatarURL});
             }
+
             res.json(newResult);
         });
 
     });
     app.post("/api/save/post", jwtAuth.parseToken, async (req, res) => {
-        let {imgData, value} = req.body;
+        let {imgList, content,name,avatarURL,time} = req.body;
         let data = await req.getData;
         let saveArticle;
-        let time = new Date();
-        let stamp = time.getTime();
         // let saveImg=`INSERT INTO imgpost (time,imgURL) values ('${time}','')`;
         if (data.hasOwnProperty("id")) {
             let {id} = data;
-            saveArticle = `INSERT INTO posts (userID,content,time) values ('${id}','${value}','${stamp}')`;
+            saveArticle = `INSERT INTO posts (userID,content,time,name,avatarURL) values ('${id}','${content}','${time}','${name}','${avatarURL}')`;
 
         } else {
             let {email} = data;
-            saveArticle = `INSERT INTO posts (email,content,time) values ('${email}','${value}','${stamp}')`;
+            saveArticle = `INSERT INTO posts (email,content,time,name,avatarURL) values ('${email}','${content}','${time}','${name}','${avatarURL}')`;
         }
-        const insertImg = (imgURL, stamp) => new Promise((resolve, reject) => {
-            let saveImg = `INSERT INTO imgpost (time,imgURL) values ('${stamp}','${imgURL}')`;
+        const insertImg = (imgURL, time) => new Promise((resolve, reject) => {
+            let saveImg = `INSERT INTO imgpost (time,imgURL) values ('${time}','${imgURL}')`;
             db.query(saveImg, (err) => {
                 if (err) reject(err);
                 resolve();
@@ -95,9 +96,9 @@ module.exports = (app, db) => {
         db.query(saveArticle, (err) => {
             if (err) throw err;
             let promise = [];
-            for (let i = 0; i < imgData.length; i++) {
-                let name = JSON.parse(imgData[i]).fileName;
-                promise.push(insertImg(name, stamp));
+            for (let i = 0; i < imgList.length; i++) {
+                let name = JSON.parse(imgList[i]).fileName;
+                promise.push(insertImg(name, time));
             }
             Promise.all(promise).then(() => {
                 res.end();

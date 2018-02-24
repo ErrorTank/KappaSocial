@@ -50,7 +50,8 @@ let userServices={
                 rej();
             })
         });
-    }
+    },
+
 };
 
 export {userServices};

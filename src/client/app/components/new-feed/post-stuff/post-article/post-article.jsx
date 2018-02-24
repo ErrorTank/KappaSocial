@@ -18,6 +18,11 @@ export class PostArticle extends React.Component{
                             size="md"
                     />
                 </div>
+
+                <div onClick={}>
+
+                </div>
+
                 <input
                     type="text"
                     className="post-input col-9 p-0 clear"

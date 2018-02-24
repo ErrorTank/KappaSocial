@@ -7,13 +7,14 @@ export class PostAction extends React.Component{
         };
     };
     render(){
-        let {close}=this.props;
+        let {close,disabled}=this.props;
         return(
             <div className="post-action row justify-content-end">
                 <div className="col-3">
                     <button
                         className="btn btn-block close-post"
                         onClick={()=>close()}
+
                     >
                         Cancel
                     </button>
@@ -23,6 +24,7 @@ export class PostAction extends React.Component{
                     <button className="btn btn-block post-article"
                             type="submit"
                             form="upload-post"
+                            disabled={disabled}
                     >
                         Post
                     </button>

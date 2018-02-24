@@ -1,4 +1,6 @@
 const jwtAuth=require("../authorization/jwt-auth");
+const validator=require("validator");
+let {isEmail}=validator;
 //TODO: change name to controller
 module.exports=(app,db)=>{
     app.post("/api/user/fb/login",(req,res)=>{
@@ -126,4 +128,17 @@ module.exports=(app,db)=>{
     //         res.json(result);
     //     });
     // });
+    app.get("/api/user",(req,res)=>{
+        let key=req.query.key,getInfo;
+
+        if(isEmail(key)){
+            getInfo=`SELECT name,avatarURL from users where email='${key}'`;
+        }else{
+            getInfo=`SELECT name,avatarURL from fbusers where userID='${key}'`;
+        }
+        db.query(getInfo,(err,result)=>{
+           if (err) throw err;
+           res.json(result);
+        });
+    });
 };

@@ -1,4 +1,5 @@
 import React from "react";
+import moment from "moment";
 
 const debounce=(fn,delay)=>{
     let action;
@@ -9,6 +10,15 @@ const debounce=(fn,delay)=>{
             fn(arg);
         },delay)
     }
+};
+
+let formatTime=(stamp)=>{
+    let now= new Date().getTime();
+    let different=now-stamp;
+    if((different/1000)/3600/24/4>12){
+        return moment(stamp).format("ddd MMM D");
+    }
+    return moment(stamp).fromNow();
 };
 
 let highLight = (keyword, name) => {
@@ -62,5 +72,6 @@ export{
     scrollToForm,
     ifFocusOutElement,
     animateCount,
-    highLight
+    highLight,
+    formatTime
 }

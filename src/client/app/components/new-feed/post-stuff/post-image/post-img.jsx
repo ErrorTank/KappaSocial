@@ -5,20 +5,28 @@ export class PostImage extends React.Component {
 
     deleteImg = (pos) => {
         let {onChange,files} = this.props;
-        let filesSubmit = [...files];
-        filesSubmit.splice(pos,1);
-        onChange(filesSubmit);
+        files.splice(pos,1);
+        onChange(files);
     };
+    getBase64=(file)=>new Promise((resolve)=>{
+        let reader = new FileReader();
+        reader.readAsDataURL(file);
+        reader.onload = () => {
+            resolve({file,src:reader.result});
+        };
+    });
 
     handleFile(files) {
         let {onChange} = this.props;
         let filesSubmit = [...this.props.files];
-
+        let promise=[];
         for (let i = 0; i < files.length; i++) {
-            let file = files[i];
-            filesSubmit.push(file);
+            promise.push(this.getBase64(files[i]));
         }
-        onChange(filesSubmit);
+        Promise.all(promise).then((data)=>{
+            onChange(filesSubmit.concat(data));
+        });
+
     }
 
     render() {
