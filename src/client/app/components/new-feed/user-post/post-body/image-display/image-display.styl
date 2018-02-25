@@ -1,0 +1,31 @@
+.img-display{
+  padding 0 20px
+  margin-bottom 10px !important
+
+
+  .img-preview{
+    overflow hidden !important
+    cursor pointer
+    position relative
+    border 1px solid transparent
+    border-radius 3px
+
+    transition all 0.1s ease;
+    img{
+      width 110%
+      position absolute
+      top 50%
+      left 50%
+      transform translate(-50%,-50%)
+    }
+  }
+  .img-preview:hover{
+    border-color #afafaf
+  }
+  .big-image{
+    height 350px
+  }
+  .small-image{
+    height 150px
+  }
+}

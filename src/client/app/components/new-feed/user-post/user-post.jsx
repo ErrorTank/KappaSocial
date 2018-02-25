@@ -2,6 +2,7 @@ import React, {Fragment} from "react";
 import {PostHeader} from "./post-header/post-header";
 import {formatTime} from "../../../../../utils/components-utils";
 import {PostBody} from "./post-body/post-body";
+import {PostFooter} from "./post-footer/post-footer";
 
 export class UserPost extends React.Component {
     constructor(props) {
@@ -23,6 +24,7 @@ export class UserPost extends React.Component {
                     content={content}
                     list={imgList}
                 />
+                <PostFooter/>
             </div>
 
         );

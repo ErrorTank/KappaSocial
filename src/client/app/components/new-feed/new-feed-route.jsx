@@ -20,32 +20,31 @@ export class NewFeedRoute extends React.Component {
         this.updatePost();
 
     };
-    updatePost=()=>{
+
+    updatePost = () => {
 
         postApi.getPost().then((posts) => {
-            setTimeout(()=>{
-                this.setState({loading:false,posts});
-            },1000);
+            setTimeout(() => {
+                this.setState({loading: false, posts});
+            }, 1000);
         });
 
 
     };
 
-    appendPost=(p)=>{
-        let {posts}=this.state;
-        this.setState({posts:posts.concat(p)});
+    appendPost = (p) => {
+        let {posts} = this.state;
+        posts.unshift(p);
+        this.setState({posts});
     };
 
     openPostModal = () => {
-        this.setState({expand:true});
+        this.setState({expand: true});
         const modal = modals.openModal({
             content: (
                 <PostStuff
-                    close={(value) => {
-
-                        modal.close(value);
-                    }}
-                    onSubmit={(p)=>this.appendPost(p)}
+                    close={value => modal.close(value)}
+                    onSubmit={p => this.appendPost(p)}
                 />
             ),
             className: "what-ever"
@@ -68,12 +67,12 @@ export class NewFeedRoute extends React.Component {
                         </div>
                         {!expand && (
                             <TogglePostModal
-                                onClick={() => this.openPostModal().then((value) => {this.setState({expand:false})})}
+                                onClick={() => this.openPostModal().then(value => this.setState({expand: false}))}
                             />
                         )}
                         <RefreshBtn
                             disabled={loading}
-                            refreshing={()=>this.setState({loading:true},()=>this.updatePost())}
+                            refreshing={() => this.setState({loading: true}, () => this.updatePost())}
                         />
                         {loading ?
                             <PostLoading/>

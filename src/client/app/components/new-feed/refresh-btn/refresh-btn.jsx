@@ -10,9 +10,8 @@ export class RefreshBtn extends React.Component{
         return(
             <div className="refresh-new-feed">
                 <button
-                    className="btn btn-outline-primary refresh-btn"
+                    className={`btn btn-outline-primary refresh-btn ${disabled ? "disabled disabled-event" :""}`}
                     onClick={()=>refreshing()}
-                    disabled={disabled}
                 >
                     <span><i className="fas fa-sync-alt"/></span> Refresh
                 </button>

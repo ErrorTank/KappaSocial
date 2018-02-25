@@ -22,7 +22,7 @@ module.exports = (app, db) => {
             fs.readFile(tempPath, (err, data) => {
 
                 fs.writeFile(copyToPath, data, (err) => {
-                    res.json({fileName: currentTime + "_" + originalFilename});
+                    res.json({fileName: "./image/uploads/"+currentTime + "_" + originalFilename});
                 });
             });
 
@@ -37,11 +37,22 @@ module.exports = (app, db) => {
             let {id} = data;
             getPost=`SELECT content, imgURL, p.time, p.name, p.avatarURL
                     FROM posts p 
-                    INNER JOIN imgpost img on (p.time = img.time)
+                    LEFT JOIN imgpost img on (p.time = img.time)
                     WHERE p.userID='${id}' 
                     or p.userID in (SELECT userID from followers where followerID ='${id}') 
                     or p.email in (SELECT email from followers where followerID ='${id}') 
                     `;
+            // getWithourImg=
+            //     `
+            //     SELECT content, time , name, avatarURL
+            //     FROM posts
+            //     WHERE time not in (${getPost}) and
+            //     (
+            //         or p.userID in (SELECT userID from followers where followerID ='${id}')
+            //         or p.email in (SELECT email from followers where followerID ='${id}')
+            //     )
+            //
+            // `;
         }else{
             console.log("reg user");
             let {email}=data;
@@ -49,7 +60,7 @@ module.exports = (app, db) => {
                         
                     SELECT content, imgURL, p.time, p.name, p.avatarURL
                     FROM posts p 
-                    INNER JOIN imgpost img on (p.time = img.time)
+                    LEFT JOIN imgpost img on (p.time = img.time)
                     WHERE p.email='${email}' 
                     or p.userID in (SELECT userID from followers where followerEmail ='${email}') 
                     or p.email in (SELECT email from followers where followerEmail ='${email}')
@@ -66,6 +77,8 @@ module.exports = (app, db) => {
                     return time===r.time;
                 }).map((r)=>r.imgURL);
                 i+=imgList.length-1;
+                if(imgList[0]===null)
+                    imgList=null;
                 newResult.push({time,content,imgList,name,avatarURL:avatarURL==="null" ? null : avatarURL});
             }
 

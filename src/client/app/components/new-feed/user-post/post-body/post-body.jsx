@@ -1,15 +1,15 @@
 import React from "react";
 import {ImageDisplay} from "./image-display/image-display";
 
-export class PostBody extends React.Component{
-    constructor(props){
+export class PostBody extends React.Component {
+    constructor(props) {
         super(props);
-        this.state={
-        };
+        this.state = {};
     };
-    render(){
-        let {list,content}=this.props;
-        return(
+
+    render() {
+        let {list, content} = this.props;
+        return (
             <div className="post-body row">
                 <div className="col-2 p-0">
 
@@ -17,11 +17,11 @@ export class PostBody extends React.Component{
                 <div className="content-contain col-10 p-0">
                     {content}
                 </div>
-                <div className="images-display">
+                {list && (
                     <ImageDisplay
                         list={list}
                     />
-                </div>
+                )}
             </div>
         );
     }

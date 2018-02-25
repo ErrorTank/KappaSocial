@@ -54,6 +54,13 @@ const ifFocusOutElement=(element,todo)=>{
       }
   });
 };
+const getBase64=(file)=>new Promise((resolve)=>{
+    let reader = new FileReader();
+    reader.readAsDataURL(file);
+    reader.onload = () => {
+        resolve({file,src:reader.result});
+    };
+});
 const animateCount=(count,fn)=>{
     let temp=0;
     let skip=Math.ceil(count/100);
@@ -73,5 +80,6 @@ export{
     ifFocusOutElement,
     animateCount,
     highLight,
-    formatTime
+    formatTime,
+    getBase64
 }

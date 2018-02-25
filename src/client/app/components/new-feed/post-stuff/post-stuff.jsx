@@ -22,17 +22,22 @@ export class PostStuff extends React.Component {
 
     handleSubmit = () => {
         let {files, value} = this.state;
-        let {onSubmit,close}=this.props;
-        files=files.map((f)=>f.file);
+        let {onSubmit, close} = this.props;
+        let getFiles = files.map((f) => f.file);
         let promise = [];
-        for (let i = 0; i < files.length; i++) {
-            promise.push(postApi.uploadPost(files[i]));
+        for (let i = 0; i < getFiles.length; i++) {
+            promise.push(postApi.uploadPost(getFiles[i]));
         }
         Promise.all(promise).then((data) => {
-            let {name,avatarURL}=userServices.getInfo();
-            let postObj={imgList: data, content:value,name,avatarURL,time:new Date().getTime()};
+            let {name, avatarURL} = userServices.getInfo();
+            console.log(data);
+            let postObj = {imgList: data, content: value, name, avatarURL, time: new Date().getTime()};
             postApi.savePost(postObj).then(() => {
-                onSubmit(postObj);
+                // console.log(files);
+                // let srcObj={imgList: files.map(f => f.src)};
+                // console.log(console.log(srcObj));
+                let srcObj={imgList: files.map(f => f.src)};
+                onSubmit(Object.assign({}, postObj,srcObj));
                 close();
 
             });
