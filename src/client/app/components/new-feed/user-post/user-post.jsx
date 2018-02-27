@@ -10,34 +10,35 @@ import {postApi} from "../../../../api/ultils-api/post-api";
 export class UserPost extends React.Component {
     constructor(props) {
         super(props);
-        this.state={
-            tempLike:false
+        this.state = {
+            tempLike: false
         };
-        let {time}=props.postInfo;
-        let {id,email}=userServices.getInfo();
-        let userID=id || "",userEmail=id ? "" : email;
-        postApi.getLikeStatus({userID,userEmail,postKey:time}).then((data)=>{
-            this.setState({tempLike:!!data.length});
+        let {time} = props.postInfo;
+        let {id, email} = userServices.getInfo();
+        let userID = id || "", userEmail = id ? "" : email;
+        postApi.getLikeStatus({userID, userEmail, postKey: time}).then((data) => {
+            this.setState({tempLike: !!data.length});
         });
 
     };
 
-    componentWillUnmount(){
-        let socket=clientSocket.getSocket();
+    componentWillUnmount() {
+        let socket = clientSocket.getSocket();
         socket.removeAllListeners();
     };
-    toggleLike=()=>{
-      let {tempLike}=this.state;
-      let {toggleLike}=this.props;
-      toggleLike(tempLike);
-      this.setState({tempLike:!tempLike});
+
+    toggleLike = () => {
+        let {tempLike} = this.state;
+        let {toggleLike} = this.props;
+        toggleLike(tempLike);
+        this.setState({tempLike: !tempLike});
     };
 
     render() {
-        let {time, name, content, imgList,avatarURL} = this.props.postInfo;
-        let {tempLike}=this.state;
-        let like=tempLike;
-        let fTime=formatTime(new Date(Number(time)));
+        let {time, name, content, imgList, avatarURL} = this.props.postInfo;
+        let {tempLike} = this.state;
+        let like = tempLike;
+        let fTime = formatTime(new Date(Number(time)));
         return (
             <div className="user-post">
 
@@ -51,7 +52,7 @@ export class UserPost extends React.Component {
                     list={imgList}
                 />
                 <PostFooter
-                    toggleLike={()=>this.toggleLike()}
+                    toggleLike={() => this.toggleLike()}
                     like={like}
                 />
             </div>

@@ -54,27 +54,26 @@ export class NewFeedRoute extends React.Component {
         return modal.result;
     };
 
-    toggleLike=(pos,isLike)=>{
-        let {id,email}=userServices.getInfo();
-        let {posts}=this.state;
-        let userEmail="",userID="";
-        if(id) userID=id;
-        else{
-            userEmail=email;
+    toggleLike = (pos, isLike) => {
+        let {id, email} = userServices.getInfo();
+        let {posts} = this.state;
+        let userEmail = "", userID = "";
+        if (id) userID = id;
+        else {
+            userEmail = email;
         }
-        let info={userID,userEmail,postKey:posts[pos].time};
-        if(!isLike){
-            postApi.likePost(info).then(()=>{
+        let info = {userID, userEmail, postKey: posts[pos].time};
+        if (!isLike) {
+            postApi.likePost(info).then(() => {
 
             });
-        }else{
-            postApi.dislikePost(info).then(()=>{
+        } else {
+            postApi.dislikePost(info).then(() => {
 
             });
         }
 
     };
-
 
 
     render() {
@@ -110,7 +109,7 @@ export class NewFeedRoute extends React.Component {
                                             <UserPost
                                                 key={i}
                                                 postInfo={p}
-                                                toggleLike={(isLike)=>this.toggleLike(i,isLike)}
+                                                toggleLike={(isLike) => this.toggleLike(i, isLike)}
                                             />
                                         ))}
                                     </div>
