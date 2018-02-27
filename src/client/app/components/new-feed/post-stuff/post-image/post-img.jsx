@@ -19,7 +19,7 @@ export class PostImage extends React.Component {
             uploadError.setError(`Can't upload ${files.length} images. Maximum is 8 images.`);
             return ;
         }
-        uploadError.removeErr();
+
         let promise=[];
         for (let i = 0; i < files.length; i++) {
             promise.push(getBase64(files[i]));

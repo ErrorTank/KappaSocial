@@ -8,9 +8,7 @@ export const privateLoader={
         userApi.authorizeUser().then(()=>{
             console.log("success");
             resolve(() => {
-                clientSocket.connect().then(()=>{
-                    console.log("connect to socket success");
-                });
+
                 customHistory.push("/")
             });
         },(()=>{

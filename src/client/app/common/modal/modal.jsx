@@ -29,13 +29,7 @@ export class Modal extends React.Component {
                         ref={(elem) => this.overlayElem = elem}
                     >
                         <div className="modal-box">
-                            {/*<div className="btn-close"*/}
-                                 {/*onClick={() => onDismiss()}*/}
-                            {/*>*/}
-                                {/*<div className="close-x">*/}
-                                    {/*&times;*/}
-                                {/*</div>*/}
-                            {/*</div>*/}
+
 
                             { content }
                         </div>

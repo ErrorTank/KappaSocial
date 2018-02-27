@@ -7,6 +7,7 @@ import {postApi} from "../../../api/ultils-api/post-api";
 import {PostLoading} from "../../common/post-loading/post-loading";
 import {RefreshBtn} from "./refresh-btn/refresh-btn";
 import {TogglePostModal} from "./toggle-post-modal/toggle-post-modal";
+import {userServices} from "../../services/user-info";
 
 
 export class NewFeedRoute extends React.Component {
@@ -53,6 +54,29 @@ export class NewFeedRoute extends React.Component {
         return modal.result;
     };
 
+    toggleLike=(pos,isLike)=>{
+        let {id,email}=userServices.getInfo();
+        let {posts}=this.state;
+        let userEmail="",userID="";
+        if(id) userID=id;
+        else{
+            userEmail=email;
+        }
+        let info={userID,userEmail,postKey:posts[pos].time};
+        if(!isLike){
+            postApi.likePost(info).then(()=>{
+
+            });
+        }else{
+            postApi.dislikePost(info).then(()=>{
+
+            });
+        }
+
+    };
+
+
+
     render() {
         let {expand, posts, loading} = this.state;
         console.log(posts);
@@ -78,14 +102,23 @@ export class NewFeedRoute extends React.Component {
                             <PostLoading/>
 
                             :
-                            <div className="new-feed-post">
-                                {posts.map((p, i) => (
-                                    <UserPost
-                                        key={i}
-                                        postInfo={p}
-                                    />
-                                ))}
-                            </div>}
+                            posts.length === 0 ? (
+                                    <p className="empty-notice">No post has found!</p>) :
+                                (
+                                    <div className="new-feed-post">
+                                        {posts.map((p, i) => (
+                                            <UserPost
+                                                key={i}
+                                                postInfo={p}
+                                                toggleLike={(isLike)=>this.toggleLike(i,isLike)}
+                                            />
+                                        ))}
+                                    </div>
+                                )
+
+                        }
+
+
                     </div>
                 </div>
             </NewFeedLayout>

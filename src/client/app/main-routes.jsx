@@ -6,6 +6,7 @@ import {NewFeedRoute} from "./components/new-feed/new-feed-route";
 import {Fade} from "./common/animation/fade";
 import {TransitionGroup} from "react-transition-group";
 import {ModalsRegistry} from "./common/modal/modals";
+import {clientSocket} from "../api/client-socket";
 
 export const customHistory = createBrowserHistory();
 
@@ -29,7 +30,10 @@ const FadeRoute=({path,component:Comp,...rest})=>{
 
 export class MainRoutes extends React.Component{
     componentWillMount(){
-      this.props.redirect();
+        clientSocket.connect().then(()=>{
+            console.log("connect to socket success");
+        });
+        this.props.redirect();
     };
     render(){
         return(

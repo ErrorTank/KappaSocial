@@ -1,6 +1,6 @@
 const socket=require("socket.io");
 
-module.exports=(server,app)=>{
+module.exports=(server,app,db)=>{
     const io=socket(server);
     io.on('connection', (socket) => {
         console.log("User connect to ",socket.id);
@@ -8,7 +8,8 @@ module.exports=(server,app)=>{
         socket.on("disconnect",()=>{
             console.log("User disconnected from "+socket.id);
         });
-        require("../controllers/socket-controller")(io,socket,app);
+        require("../controllers/socket-controller")(io,socket,app,db);
+
     });
     return io;
 };

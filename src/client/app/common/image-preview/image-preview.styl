@@ -1,0 +1,43 @@
+
+.preview-container{
+  height 400px
+  background-color black
+  border-radius 4px
+  position relative
+  overflow hidden
+  border 1px solid white
+  .side{
+    position absolute
+    top 50%
+    transform translateY(-50%)
+    font-size lg + 1.5rem
+    cursor pointer
+    opacity 0
+    z-index 2
+    color #8c8c8c
+  }
+  .side:hover{
+    opacity 1 !important
+  }
+  .prev-img{
+    left 5px
+  }
+  .next-img{
+    right 5px
+  }
+  img{
+    position absolute
+    top 50%
+    left 50%
+    transform translate(-50%,-50%)
+  }
+  .big-img{
+    width 100%
+  }
+}
+.preview-container:hover{
+  .side{
+    opacity 0.3
+  }
+
+}

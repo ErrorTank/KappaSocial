@@ -7,20 +7,42 @@
     overflow hidden !important
     cursor pointer
     position relative
-    border 1px solid transparent
+    border 3px solid transparent
     border-radius 3px
 
     transition all 0.1s ease;
     img{
-      width 110%
+      width 100%
       position absolute
       top 50%
       left 50%
       transform translate(-50%,-50%)
     }
+    .more-notice{
+      position absolute
+      z-index 1
+      width 100%
+      height 100%
+      background-color rgba(0,0,0,0.6)
+      p{
+        color white
+        position absolute
+        text-align center
+        top 50%
+        left 50%
+        transform translate(-50%,-50%)
+        font-size lg + 1rem
+        font-weight bold
+        font-family: 'Montserrat', sans-serif;
+      }
+
+    }
+  }
+  .more-notice{
+
   }
   .img-preview:hover{
-    border-color #afafaf
+    border-color primary
   }
   .big-image{
     height 350px

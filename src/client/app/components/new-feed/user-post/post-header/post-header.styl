@@ -1,5 +1,36 @@
 .post-header{
   padding 5px 5px
+  .post-option{
+    text-align center
+    position relative
+    .p-options-enter {
+      opacity: 0;
+    }
+
+    .p-options-enter.p-options-enter-active {
+
+      opacity: 1;
+      transition: opacity 0.2s ease;
+    }
+
+    .p-options-exit {
+      opacity  1
+    }
+
+    .p-options-exit.p-options-exit-active {
+      opacity: 0;
+      transition: opacity 0.2s ease;
+    }
+    .option-toggle{
+      font-size sm
+      transition all 0.1s ease;
+      cursor pointer
+      color #cccccc
+    }
+    .option-toggle:hover{
+      color #848484
+    }
+  }
   .avatar-contain{
     width 50px !important
     height 50px !important

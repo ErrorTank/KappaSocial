@@ -38,7 +38,7 @@ export class ModalsRegistry extends React.Component {
 
     dismiss(modal) {
         _.remove(this.state.modalList, modal);
-        console.log(modal.resolve)
+        console.log(modal.resolve);
         modal.resolve();
         this.forceUpdate();
     }

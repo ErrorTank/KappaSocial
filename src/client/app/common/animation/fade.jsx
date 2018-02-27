@@ -10,6 +10,7 @@ export const Fade = ({children,className,timeout,...props}) => {
         >
             {children}
 
+
         </CSSTransition>
     );
 };

@@ -14,10 +14,10 @@ export class PostAction extends React.Component{
         let err=uploadError.getError();
         return(
             <div className="post-action row justify-content-end">
-                <div className="col-6 error-notify p-0">
+                <div className="col-8 error-notify p-0">
                     {err && err}
                 </div>
-                <div className="col-3">
+                <div className="col-2 p-1">
                     <button
                         className="btn btn-block close-post"
                         onClick={()=>close()}
@@ -27,7 +27,7 @@ export class PostAction extends React.Component{
                     </button>
                 </div>
 
-                <div className="col-3">
+                <div className="col-2 p-1">
                     <button className="btn btn-block post-article"
                             type="submit"
                             form="upload-post"

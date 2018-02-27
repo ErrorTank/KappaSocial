@@ -40,8 +40,8 @@ const server = app.listen(port, () => {
     console.log(`Listen on port ${port}...`);
 });
 
-require("./sockets/socket")(server, app);
-require("./controllers/db-controller")(app, db);
+require("./sockets/socket")(server, app,db);
 require("./controllers/user-controller")(app, db);
+require("./controllers/db-controller")(app, db);
 require("./controllers/post-controllers")(app, db);
 

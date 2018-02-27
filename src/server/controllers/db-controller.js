@@ -27,8 +27,15 @@ module.exports=(app,db)=>{
             res.send("Create posts complete");
         });
     });
+    app.get("/api/db/create/postuser",(req,res)=>{
+        let sql="CREATE TABLE postuser (ID int NOT NULL AUTO_INCREMENT Primary key,userID VARCHAR(50) ,email VARCHAR(50) , time VARCHAR(20) )";
+        db.query(sql, (err) => {
+            if (err) throw err;
+            res.send("Create post-user complete");
+        });
+    });
     app.get("/api/db/create/post/img",(req,res)=>{
-        let sql = "CREATE TABLE imgPost (imgID int NOT NULL AUTO_INCREMENT Primary key, time VARCHAR(20), imgURL VARCHAR(100))";
+        let sql = "CREATE TABLE imgPost (imgID int NOT NULL AUTO_INCREMENT Primary key, time VARCHAR(20), imgURL VARCHAR(200))";
         db.query(sql, (err) => {
             if (err) throw err;
             res.send("Create img post complete");

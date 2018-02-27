@@ -7,6 +7,7 @@ import {TransitionGroup} from "react-transition-group";
 import {Fade} from "../../../common/animation/fade";
 import {postApi} from "../../../../api/ultils-api/post-api";
 import {userServices} from "../../../services/user-info";
+import {uploadError} from "../../../services/upload-error";
 
 
 export class PostStuff extends React.Component {
@@ -18,7 +19,9 @@ export class PostStuff extends React.Component {
             files: []
         }
     };
-
+    componentWillUpdate(){
+        uploadError.removeErr();
+    };
 
     handleSubmit = () => {
         let {files, value} = this.state;
@@ -33,9 +36,6 @@ export class PostStuff extends React.Component {
             console.log(data);
             let postObj = {imgList: data, content: value, name, avatarURL, time: new Date().getTime()};
             postApi.savePost(postObj).then(() => {
-                // console.log(files);
-                // let srcObj={imgList: files.map(f => f.src)};
-                // console.log(console.log(srcObj));
                 let srcObj={imgList: files.map(f => f.src)};
                 onSubmit(Object.assign({}, postObj,srcObj));
                 close();
@@ -79,6 +79,9 @@ export class PostStuff extends React.Component {
                           method="POST"
                           onSubmit={(e) => {
                               e.preventDefault();
+                              if(value.length>200){
+
+                              }
                               this.handleSubmit(e)
                           }}
                     >

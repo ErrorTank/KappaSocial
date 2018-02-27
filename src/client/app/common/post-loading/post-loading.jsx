@@ -1,20 +1,28 @@
 import React from "react";
 
-export class PostLoading extends React.Component{
-    constructor(props){
+let timeout = [];
+
+export class PostLoading extends React.Component {
+    constructor(props) {
         super(props);
     };
-    componentDidMount(){
-        for(let i=0;i<$(".circle-wrapper li").length;i++){
-            setTimeout(()=>{
+
+    componentDidMount() {
+        for (let i = 0; i < $(".circle-wrapper li").length; i++) {
+            timeout[i] = setTimeout(() => {
                 $($(".circle-wrapper li")[i]).addClass("wave");
-            },180*i);
+            }, 180 * i);
 
         }
-      console.log();
+        console.log();
     };
-    render(){
-        return(
+
+    componentWillUnmount() {
+        timeout.forEach((t) => clearTimeout(t));
+    };
+
+    render() {
+        return (
             <div className="post-loading">
                 <ul className="circle-wrapper">
                     <li></li>

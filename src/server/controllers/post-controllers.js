@@ -8,7 +8,7 @@ const jwtAuth = require("../authorization/jwt-auth");
 //     return jwtAuth.verifyToken(token);
 // };
 
-module.exports = (app, db) => {
+module.exports = (app, db,io,socket) => {
 
     app.post("/api/upload/post", (req, res) => {
 
@@ -35,24 +35,15 @@ module.exports = (app, db) => {
         if (data.hasOwnProperty("id")){
             console.log("fb user");
             let {id} = data;
-            getPost=`SELECT content, imgURL, p.time, p.name, p.avatarURL
+            getPost=`
+                     
+                    SELECT content, imgURL, p.time, p.name, p.avatarURL
                     FROM posts p 
                     LEFT JOIN imgpost img on (p.time = img.time)
                     WHERE p.userID='${id}' 
                     or p.userID in (SELECT userID from followers where followerID ='${id}') 
                     or p.email in (SELECT email from followers where followerID ='${id}') 
                     `;
-            // getWithourImg=
-            //     `
-            //     SELECT content, time , name, avatarURL
-            //     FROM posts
-            //     WHERE time not in (${getPost}) and
-            //     (
-            //         or p.userID in (SELECT userID from followers where followerID ='${id}')
-            //         or p.email in (SELECT email from followers where followerID ='${id}')
-            //     )
-            //
-            // `;
         }else{
             console.log("reg user");
             let {email}=data;
@@ -86,6 +77,22 @@ module.exports = (app, db) => {
         });
 
     });
+
+    app.get("/api/post/like",(req,res)=>{
+       let {userID,userEmail,key}=req.query;
+       console.log(req.query);
+       let check;
+       if(userID){
+            check=`SELECT id from postuser WHERE userID='${userID}' AND time='${key}'`;
+       }else{
+            check=`SELECT id from postuser WHERE email='${userEmail}' AND time='${key}'`;
+       }
+       db.query(check,(err,result)=>{
+          if(err) throw err;
+          res.json(result);
+       });
+    });
+
     app.post("/api/save/post", jwtAuth.parseToken, async (req, res) => {
         let {imgList, content,name,avatarURL,time} = req.body;
         let data = await req.getData;
