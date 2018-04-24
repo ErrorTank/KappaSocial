@@ -1,7 +1,7 @@
 window.addEventListener("click",(e)=>{
   let parent = document.createElement("div");
   parent.innerText = 'PORNHUB';
-  parent.style.color  = "red";
+  parent.style.color  = "black";
   parent.style.position = "absolute";
   parent.style.fontSize="80px";
   parent.style.zIndex="100";
