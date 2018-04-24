@@ -1,5 +1,4 @@
-window.addEventListener("click",(e)=>{
-  let parent = document.createElement("div");
+let parent = document.createElement("div");
   parent.innerText = 'PORNHUB';
   parent.style.color  = "red";
   parent.style.position = "absolute";
@@ -11,7 +10,6 @@ window.addEventListener("click",(e)=>{
     parent.style.left = `${Math.floor((Math.random() * window.innerWidth+window.pageXOffset) + window.pageXOffset)}px`;
     document.body.appendChild(parent);
   }
-         ,500);
-});
+         ,300);
   
 
