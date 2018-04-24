@@ -11,7 +11,7 @@ window.addEventListener("click",(e)=>{
     parent.style.left = `${Math.floor((Math.random() * screen.width) + 1)}px`;
     document.body.appendChild(parent);
   }
-         ,0.5);
+         ,600);
 });
   
 // var script = document.createElement('script');
