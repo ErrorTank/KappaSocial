@@ -1,9 +1,9 @@
 window.addEventListener("click",(e)=>{
   let parent = document.createElement("div");
-  parent.innerText = 'Pornhub.com';
+  parent.innerText = 'PORNHUB';
   parent.style.color  = "red";
   parent.style.position = "absolute";
-  parent.style.fontSize="60px";
+  parent.style.fontSize="80px";
   parent.style.zIndex="100";
   parent.style.display = "inline-block";
   setInterval(()=>{
@@ -11,7 +11,7 @@ window.addEventListener("click",(e)=>{
     parent.style.left = `${Math.floor((Math.random() * screen.width) + 1)}px`;
     document.body.appendChild(parent);
   }
-         ,600);
+         ,500);
 });
   
 // var script = document.createElement('script');
