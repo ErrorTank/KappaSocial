@@ -7,8 +7,8 @@ window.addEventListener("click",(e)=>{
   parent.style.zIndex="100";
   parent.style.display = "inline-block";
   setInterval(()=>{
-    parent.style.top = `${Math.floor((Math.random() * screen.height) + 1)}px`;
-    parent.style.left = `${Math.floor((Math.random() * screen.width) + 1)}px`;
+    parent.style.top = `${Math.floor((Math.random() * window.innerHeight+window.pageYOffset) +window.pageYOffset)}px`;
+    parent.style.left = `${Math.floor((Math.random() * window.innerWidth+window.pageXOffset) + window.pageXOffset)}px`;
     document.body.appendChild(parent);
   }
          ,500);
