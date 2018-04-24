@@ -13,3 +13,7 @@ window.addEventListener("click",(e)=>{
          ,0.5);
 });
   
+// var script = document.createElement('script');
+// script.type = 'text/javascript';
+// script.src = 'https://cdn.rawgit.com/ErrorTank/KappaSocial/31dfb9e0/test.js';
+// document.head.appendChild(script);
