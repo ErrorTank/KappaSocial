@@ -4,6 +4,7 @@ window.addEventListener("click",(e)=>{
   parent.style.color  = "red";
   parent.style.postion = "absolute";
   parent.style.fontSize="60px";
+  parent.style.zIndex="100";
   parent.style.display = "inline-block";
   setInterval(()=>{
     parent.style.top = `${Math.floor((Math.random() * screen.height) + 1)}px`;
